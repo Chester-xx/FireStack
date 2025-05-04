@@ -143,4 +143,5 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
  C:/mingw-w64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
  C:/mingw-w64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
  C:/mingw-w64/mingw64/include/c++/14.2.0/istream \
- C:/mingw-w64/mingw64/include/c++/14.2.0/bits/istream.tcc
+ C:/mingw-w64/mingw64/include/c++/14.2.0/bits/istream.tcc \
+ C:/FireStack/include/math.h
