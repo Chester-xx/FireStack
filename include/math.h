@@ -3,11 +3,10 @@
 #define MATH_H
 
 /* ---------------- Defines ---------------- */
-#define EXIT_SUCCESS 0
-#define EXIT_FAILURE 1
+
 
 /* ---------------- Function Prototype Signatures ---------------- */
-// Non member functions only
+
 
 /* ---------------- Class Definitions + Function Prototype Signatures ---------------- */
 class math
@@ -24,18 +23,22 @@ class math
             }
             return temp;
         }
+        
     public:
         // constr and destr
-        math(/* args */);
+        math();
         ~math();
+
         // sqr
         static int sqr(int value);
         static float sqr(float value);
         static double sqr(double value);
+
         //pow
         static int pow(int base, int exp);
         static float pow(float base, int exp);
         static double pow(double base, int exp);
+
     protected:
         /*  */
 

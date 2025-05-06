@@ -3,6 +3,7 @@
 
 apps/app1/CMakeFiles/app1.dir/main.cpp.obj: C:/FireStack/apps/app1/main.cpp \
   C:/FireStack/include/math.h \
+  C:/FireStack/include/memory.h \
   C:/mingw-w64/mingw64/include/c++/14.2.0/backward/binders.h \
   C:/mingw-w64/mingw64/include/c++/14.2.0/bit \
   C:/mingw-w64/mingw64/include/c++/14.2.0/bits/alloc_traits.h \
@@ -171,6 +172,8 @@ C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
 
+C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
+
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/stl_pair.h:
@@ -221,6 +224,8 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/bits/memory_resource.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/localefwd.h:
 
+C:/mingw-w64/mingw64/include/c++/14.2.0/pstl/pstl_config.h:
+
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/charconv.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/exception.h:
@@ -235,6 +240,14 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/bits/basic_string.tcc:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/backward/binders.h:
 
+C:/FireStack/include/memory.h:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/predefined_ops.h:
+
+C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/limits.h:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc:
+
 C:/mingw-w64/mingw64/include/c++/14.2.0/cwctype:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/type_traits:
@@ -247,17 +260,11 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/streambuf:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/concept_check.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/allocator.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/basic_ios.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/typeinfo:
-
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/std_abs.h:
-
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/functexcept.h:
-
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/istream.tcc:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/locale_classes.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/basic_string.h:
 
@@ -267,15 +274,23 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/system_error:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/predefined_ops.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/functexcept.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/allocator.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/istream.tcc:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/concept_check.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/locale_classes.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/basic_ios.h:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/typeinfo:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/std_abs.h:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc:
+
+C:/FireStack/include/math.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
@@ -307,10 +322,6 @@ C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/exception_ptr.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/ostream_insert.h:
-
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/version.h:
-
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/locale_facets.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
@@ -329,15 +340,9 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/cstdio:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/locale_classes.tcc:
 
-C:/FireStack/include/math.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/ostream_insert.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/locale_facets.tcc:
-
-C:/mingw-w64/mingw64/include/c++/14.2.0/pstl/pstl_config.h:
-
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/basic_ios.tcc:
-
-C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/limits.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/version.h:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/vadefs.h:
 
@@ -438,5 +443,3 @@ C:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/locale.h:
-
-C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
