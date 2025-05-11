@@ -1,2 +1,2 @@
-C:\mingw-w64\mingw64\bin\ar.exe qc libfirestack_core.a CMakeFiles/firestack_core.dir/core/math.cpp.obj
+C:\mingw-w64\mingw64\bin\ar.exe qc libfirestack_core.a CMakeFiles/firestack_core.dir/core/math.cpp.obj CMakeFiles/firestack_core.dir/core/memory.cpp.obj
 C:\mingw-w64\mingw64\bin\ranlib.exe libfirestack_core.a

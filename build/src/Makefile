@@ -160,6 +160,30 @@ core/math.cpp.s:
 	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/math.cpp.s
 .PHONY : core/math.cpp.s
 
+core/memory.obj: core/memory.cpp.obj
+.PHONY : core/memory.obj
+
+# target to build an object file
+core/memory.cpp.obj:
+	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj
+.PHONY : core/memory.cpp.obj
+
+core/memory.i: core/memory.cpp.i
+.PHONY : core/memory.i
+
+# target to preprocess a source file
+core/memory.cpp.i:
+	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/memory.cpp.i
+.PHONY : core/memory.cpp.i
+
+core/memory.s: core/memory.cpp.s
+.PHONY : core/memory.s
+
+# target to generate assembly for a file
+core/memory.cpp.s:
+	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/memory.cpp.s
+.PHONY : core/memory.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -173,6 +197,9 @@ help:
 	@echo ... core/math.obj
 	@echo ... core/math.i
 	@echo ... core/math.s
+	@echo ... core/memory.obj
+	@echo ... core/memory.i
+	@echo ... core/memory.s
 .PHONY : help
 
 

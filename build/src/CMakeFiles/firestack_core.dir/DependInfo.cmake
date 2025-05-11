@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/FireStack/src/core/math.cpp" "src/CMakeFiles/firestack_core.dir/core/math.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/math.cpp.obj.d"
+  "C:/FireStack/src/core/memory.cpp" "src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

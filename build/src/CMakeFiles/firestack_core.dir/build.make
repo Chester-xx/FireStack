@@ -86,17 +86,34 @@ src/CMakeFiles/firestack_core.dir/core/math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/core/math.cpp.s"
 	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\core\math.cpp -o CMakeFiles\firestack_core.dir\core\math.cpp.s
 
+src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj: C:/FireStack/src/core/memory.cpp
+src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj -MF CMakeFiles\firestack_core.dir\core\memory.cpp.obj.d -o CMakeFiles\firestack_core.dir\core\memory.cpp.obj -c C:\FireStack\src\core\memory.cpp
+
+src/CMakeFiles/firestack_core.dir/core/memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/core/memory.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\core\memory.cpp > CMakeFiles\firestack_core.dir\core\memory.cpp.i
+
+src/CMakeFiles/firestack_core.dir/core/memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/core/memory.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\core\memory.cpp -o CMakeFiles\firestack_core.dir\core\memory.cpp.s
+
 # Object files for target firestack_core
 firestack_core_OBJECTS = \
-"CMakeFiles/firestack_core.dir/core/math.cpp.obj"
+"CMakeFiles/firestack_core.dir/core/math.cpp.obj" \
+"CMakeFiles/firestack_core.dir/core/memory.cpp.obj"
 
 # External object files for target firestack_core
 firestack_core_EXTERNAL_OBJECTS =
 
 src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/core/math.cpp.obj
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/core/memory.cpp.obj
 src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/build.make
 src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libfirestack_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libfirestack_core.a"
 	cd /d C:\FireStack\build\src && $(CMAKE_COMMAND) -P CMakeFiles\firestack_core.dir\cmake_clean_target.cmake
 	cd /d C:\FireStack\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\firestack_core.dir\link.txt --verbose=$(VERBOSE)
 

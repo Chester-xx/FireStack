@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/firestack_core.dir/core/math.cpp.obj"
   "CMakeFiles/firestack_core.dir/core/math.cpp.obj.d"
+  "CMakeFiles/firestack_core.dir/core/memory.cpp.obj"
+  "CMakeFiles/firestack_core.dir/core/memory.cpp.obj.d"
   "libfirestack_core.a"
   "libfirestack_core.pdb"
 )
