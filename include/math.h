@@ -67,7 +67,7 @@ class math
         // square
         template<typename t>
         static t sqr(const t value) {
-            static assert(std::is_arithmetic<t>::value, "Source file function 'math::sqr()' only supports arithmetic types.");
+            static_assert(std::is_arithmetic<t>::value, "Source file function 'math::sqr()' only supports arithmetic types.");
             return value * value;
         }
 

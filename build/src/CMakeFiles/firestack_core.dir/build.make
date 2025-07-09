@@ -71,11 +71,41 @@ include src/CMakeFiles/firestack_core.dir/flags.make
 src/CMakeFiles/firestack_core.dir/codegen:
 .PHONY : src/CMakeFiles/firestack_core.dir/codegen
 
+src/CMakeFiles/firestack_core.dir/core/input.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/core/input.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/core/input.cpp.obj: C:/FireStack/src/core/input.cpp
+src/CMakeFiles/firestack_core.dir/core/input.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/firestack_core.dir/core/input.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/core/input.cpp.obj -MF CMakeFiles\firestack_core.dir\core\input.cpp.obj.d -o CMakeFiles\firestack_core.dir\core\input.cpp.obj -c C:\FireStack\src\core\input.cpp
+
+src/CMakeFiles/firestack_core.dir/core/input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/core/input.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\core\input.cpp > CMakeFiles\firestack_core.dir\core\input.cpp.i
+
+src/CMakeFiles/firestack_core.dir/core/input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/core/input.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\core\input.cpp -o CMakeFiles\firestack_core.dir\core\input.cpp.s
+
+src/CMakeFiles/firestack_core.dir/core/log.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/core/log.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/core/log.cpp.obj: C:/FireStack/src/core/log.cpp
+src/CMakeFiles/firestack_core.dir/core/log.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/firestack_core.dir/core/log.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/core/log.cpp.obj -MF CMakeFiles\firestack_core.dir\core\log.cpp.obj.d -o CMakeFiles\firestack_core.dir\core\log.cpp.obj -c C:\FireStack\src\core\log.cpp
+
+src/CMakeFiles/firestack_core.dir/core/log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/core/log.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\core\log.cpp > CMakeFiles\firestack_core.dir\core\log.cpp.i
+
+src/CMakeFiles/firestack_core.dir/core/log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/core/log.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\core\log.cpp -o CMakeFiles\firestack_core.dir\core\log.cpp.s
+
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: C:/FireStack/src/core/math.cpp
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/firestack_core.dir/core/math.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/firestack_core.dir/core/math.cpp.obj"
 	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/core/math.cpp.obj -MF CMakeFiles\firestack_core.dir\core\math.cpp.obj.d -o CMakeFiles\firestack_core.dir\core\math.cpp.obj -c C:\FireStack\src\core\math.cpp
 
 src/CMakeFiles/firestack_core.dir/core/math.cpp.i: cmake_force
@@ -86,17 +116,106 @@ src/CMakeFiles/firestack_core.dir/core/math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/core/math.cpp.s"
 	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\core\math.cpp -o CMakeFiles\firestack_core.dir\core\math.cpp.s
 
+src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj: C:/FireStack/src/ui/button.cpp
+src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj -MF CMakeFiles\firestack_core.dir\ui\button.cpp.obj.d -o CMakeFiles\firestack_core.dir\ui\button.cpp.obj -c C:\FireStack\src\ui\button.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/ui/button.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\ui\button.cpp > CMakeFiles\firestack_core.dir\ui\button.cpp.i
+
+src/CMakeFiles/firestack_core.dir/ui/button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/ui/button.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\ui\button.cpp -o CMakeFiles\firestack_core.dir\ui\button.cpp.s
+
+src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj: C:/FireStack/src/ui/label.cpp
+src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj -MF CMakeFiles\firestack_core.dir\ui\label.cpp.obj.d -o CMakeFiles\firestack_core.dir\ui\label.cpp.obj -c C:\FireStack\src\ui\label.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/label.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/ui/label.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\ui\label.cpp > CMakeFiles\firestack_core.dir\ui\label.cpp.i
+
+src/CMakeFiles/firestack_core.dir/ui/label.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/ui/label.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\ui\label.cpp -o CMakeFiles\firestack_core.dir\ui\label.cpp.s
+
+src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj: C:/FireStack/src/ui/textbox.cpp
+src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj -MF CMakeFiles\firestack_core.dir\ui\textbox.cpp.obj.d -o CMakeFiles\firestack_core.dir\ui\textbox.cpp.obj -c C:\FireStack\src\ui\textbox.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/ui/textbox.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\ui\textbox.cpp > CMakeFiles\firestack_core.dir\ui\textbox.cpp.i
+
+src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/ui/textbox.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\ui\textbox.cpp -o CMakeFiles\firestack_core.dir\ui\textbox.cpp.s
+
+src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj: C:/FireStack/src/ui/ui_base.cpp
+src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj -MF CMakeFiles\firestack_core.dir\ui\ui_base.cpp.obj.d -o CMakeFiles\firestack_core.dir\ui\ui_base.cpp.obj -c C:\FireStack\src\ui\ui_base.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/ui/ui_base.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\ui\ui_base.cpp > CMakeFiles\firestack_core.dir\ui\ui_base.cpp.i
+
+src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/ui/ui_base.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\ui\ui_base.cpp -o CMakeFiles\firestack_core.dir\ui\ui_base.cpp.s
+
+src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj: src/CMakeFiles/firestack_core.dir/flags.make
+src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj: src/CMakeFiles/firestack_core.dir/includes_CXX.rsp
+src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj: C:/FireStack/src/ui/window.cpp
+src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj -MF CMakeFiles\firestack_core.dir\ui\window.cpp.obj.d -o CMakeFiles\firestack_core.dir\ui\window.cpp.obj -c C:\FireStack\src\ui\window.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/ui/window.cpp.i"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\ui\window.cpp > CMakeFiles\firestack_core.dir\ui\window.cpp.i
+
+src/CMakeFiles/firestack_core.dir/ui/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/ui/window.cpp.s"
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\ui\window.cpp -o CMakeFiles\firestack_core.dir\ui\window.cpp.s
+
 # Object files for target firestack_core
 firestack_core_OBJECTS = \
-"CMakeFiles/firestack_core.dir/core/math.cpp.obj"
+"CMakeFiles/firestack_core.dir/core/input.cpp.obj" \
+"CMakeFiles/firestack_core.dir/core/log.cpp.obj" \
+"CMakeFiles/firestack_core.dir/core/math.cpp.obj" \
+"CMakeFiles/firestack_core.dir/ui/button.cpp.obj" \
+"CMakeFiles/firestack_core.dir/ui/label.cpp.obj" \
+"CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj" \
+"CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj" \
+"CMakeFiles/firestack_core.dir/ui/window.cpp.obj"
 
 # External object files for target firestack_core
 firestack_core_EXTERNAL_OBJECTS =
 
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/core/input.cpp.obj
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/core/log.cpp.obj
 src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/core/math.cpp.obj
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj
+src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj
 src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/build.make
 src/libfirestack_core.a: src/CMakeFiles/firestack_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libfirestack_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libfirestack_core.a"
 	cd /d C:\FireStack\build\src && $(CMAKE_COMMAND) -P CMakeFiles\firestack_core.dir\cmake_clean_target.cmake
 	cd /d C:\FireStack\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\firestack_core.dir\link.txt --verbose=$(VERBOSE)
 

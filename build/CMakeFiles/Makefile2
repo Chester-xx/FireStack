@@ -145,12 +145,12 @@ src/clean: src/CMakeFiles/firestack_core.dir/clean
 src/CMakeFiles/firestack_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=3,4 "Built target firestack_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target firestack_core"
 .PHONY : src/CMakeFiles/firestack_core.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/firestack_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/firestack_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 0
 .PHONY : src/CMakeFiles/firestack_core.dir/rule
@@ -162,7 +162,7 @@ firestack_core: src/CMakeFiles/firestack_core.dir/rule
 # codegen rule for target.
 src/CMakeFiles/firestack_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=3,4 "Finished codegen for target firestack_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Finished codegen for target firestack_core"
 .PHONY : src/CMakeFiles/firestack_core.dir/codegen
 
 # clean rule for target.
@@ -182,7 +182,7 @@ apps/app1/CMakeFiles/app1.dir/all: src/CMakeFiles/firestack_core.dir/all
 
 # Build rule for subdir invocation for target.
 apps/app1/CMakeFiles/app1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/app1/CMakeFiles/app1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 0
 .PHONY : apps/app1/CMakeFiles/app1.dir/rule
