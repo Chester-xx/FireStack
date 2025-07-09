@@ -144,4 +144,20 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
  C:/mingw-w64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
  C:/mingw-w64/mingw64/include/c++/14.2.0/istream \
  C:/mingw-w64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- C:/FireStack/include/math.h C:/FireStack/include/memory.h
+ C:/FireStack/include/math.h \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/cmath \
+ C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/math.h \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/bits/specfun.h \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/limits \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/gamma.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/special_function_util.h \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/beta_function.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
+ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc
