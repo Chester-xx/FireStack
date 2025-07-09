@@ -16,7 +16,7 @@
 class math
 {
     private:
-        //pow wrapper
+        //power wrapper
         template<typename t>
         static t power(t base, int exp) {
             if (exp == 0) return 1;
@@ -64,22 +64,25 @@ class math
             return a / b;
         }
 
-        // FOR LATER -- STATIC ASSERT arithmetic types using templates for below
-        // sqr
-        static int sqr(const int value);
-        static float sqr(const float value);
-        static double sqr(const double value);
-
-        // sqrt - calls cmath std::sqrt() for safety
+        // square
         template<typename t>
-        static t sqrt(t value) {
+        static t sqr(const t value) {
+            static assert(std::is_arithmetic<t>::value, "Source file function 'math::sqr()' only supports arithmetic types.");
+            return value * value;
+        }
+
+        // sqrt
+        template<typename t>
+        static t sqrt(const t value) {
             return std::sqrt(value);
         }
 
-        //pow
-        static int pow(const int base, const int exp);
-        static float pow(const float base, const int exp);
-        static double pow(const double base, const int exp);
+        //power
+        template<typename B, typename E>
+        static auto pow(const B base, const E exponent) -> decltype(math::power(base, exponent)) {
+            static_assert(std::is_arithmetic<B>::value && std::is_arithmetic<E>::value, "Source file function 'math::pow()' only supports arithmetic types.");
+            return power(base, exponent);
+        }
 
     protected:
         /*  */

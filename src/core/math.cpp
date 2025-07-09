@@ -15,17 +15,6 @@ math::~math() {
 
 /* ---------------- Functions ---------------- */
 
-// sqr
-int math::sqr(const int value) {
-    return value * value;
-}
-float math::sqr(const float value) {
-    return value * value;
-}
-double math::sqr(const double value) {
-    return value * value;
-}
-
 // pow - relies on power within header file - template reliant itself as for the decleration
 int math::pow(const int base, const int exp) {
     return math::power(base, exp);

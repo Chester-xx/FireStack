@@ -76,15 +76,15 @@ src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: src/CMakeFiles/firestack_co
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: C:/FireStack/src/core/math.cpp
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: src/CMakeFiles/firestack_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/firestack_core.dir/core/math.cpp.obj"
-	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/core/math.cpp.obj -MF CMakeFiles\firestack_core.dir\core\math.cpp.obj.d -o CMakeFiles\firestack_core.dir\core\math.cpp.obj -c C:\FireStack\src\core\math.cpp
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/firestack_core.dir/core/math.cpp.obj -MF CMakeFiles\firestack_core.dir\core\math.cpp.obj.d -o CMakeFiles\firestack_core.dir\core\math.cpp.obj -c C:\FireStack\src\core\math.cpp
 
 src/CMakeFiles/firestack_core.dir/core/math.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firestack_core.dir/core/math.cpp.i"
-	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\core\math.cpp > CMakeFiles\firestack_core.dir\core\math.cpp.i
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\src\core\math.cpp > CMakeFiles\firestack_core.dir\core\math.cpp.i
 
 src/CMakeFiles/firestack_core.dir/core/math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firestack_core.dir/core/math.cpp.s"
-	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\core\math.cpp -o CMakeFiles\firestack_core.dir\core\math.cpp.s
+	cd /d C:\FireStack\build\src && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\src\core\math.cpp -o CMakeFiles\firestack_core.dir\core\math.cpp.s
 
 # Object files for target firestack_core
 firestack_core_OBJECTS = \
