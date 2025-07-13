@@ -132,3 +132,18 @@ src/CMakeFiles/firestack_core.dir/core/math.cpp.obj
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/vadefs.h
  C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/wchar.h
 
+src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj
+ C:/FireStack/src/ui/button.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj
+ C:/FireStack/src/ui/label.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj
+ C:/FireStack/src/ui/textbox.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj
+ C:/FireStack/src/ui/ui_base.cpp
+
+src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj
+ C:/FireStack/src/ui/window.cpp
+

@@ -3,6 +3,7 @@
 
 apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/FireStack/apps/app1/main.cpp
+ C:/FireStack/include/log.h
  C:/FireStack/include/math.h
  C:/mingw-w64/mingw64/include/c++/14.2.0/backward/binders.h
  C:/mingw-w64/mingw64/include/c++/14.2.0/bit
