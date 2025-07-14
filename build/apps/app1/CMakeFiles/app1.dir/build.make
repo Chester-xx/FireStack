@@ -76,15 +76,15 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: apps/app1/CMakeFiles/app1.dir/includ
 apps/app1/CMakeFiles/app1.dir/main.cpp.obj: C:/FireStack/apps/app1/main.cpp
 apps/app1/CMakeFiles/app1.dir/main.cpp.obj: apps/app1/CMakeFiles/app1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object apps/app1/CMakeFiles/app1.dir/main.cpp.obj"
-	cd /d C:\FireStack\build\apps\app1 && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/app1/CMakeFiles/app1.dir/main.cpp.obj -MF CMakeFiles\app1.dir\main.cpp.obj.d -o CMakeFiles\app1.dir\main.cpp.obj -c C:\FireStack\apps\app1\main.cpp
+	cd /d C:\FireStack\build\apps\app1 && C:\mingw-w64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT apps/app1/CMakeFiles/app1.dir/main.cpp.obj -MF CMakeFiles\app1.dir\main.cpp.obj.d -o CMakeFiles\app1.dir\main.cpp.obj -c C:\FireStack\apps\app1\main.cpp
 
 apps/app1/CMakeFiles/app1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app1.dir/main.cpp.i"
-	cd /d C:\FireStack\build\apps\app1 && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\apps\app1\main.cpp > CMakeFiles\app1.dir\main.cpp.i
+	cd /d C:\FireStack\build\apps\app1 && C:\mingw-w64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\FireStack\apps\app1\main.cpp > CMakeFiles\app1.dir\main.cpp.i
 
 apps/app1/CMakeFiles/app1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app1.dir/main.cpp.s"
-	cd /d C:\FireStack\build\apps\app1 && C:\mingw-w64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\apps\app1\main.cpp -o CMakeFiles\app1.dir\main.cpp.s
+	cd /d C:\FireStack\build\apps\app1 && C:\mingw-w64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\FireStack\apps\app1\main.cpp -o CMakeFiles\app1.dir\main.cpp.s
 
 # Object files for target app1
 app1_OBJECTS = \

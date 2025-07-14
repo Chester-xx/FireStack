@@ -4,8 +4,8 @@
 src/CMakeFiles/firestack_core.dir/core/input.cpp.obj
  C:/FireStack/src/core/input.cpp
 
-src/CMakeFiles/firestack_core.dir/core/log.cpp.obj
- C:/FireStack/src/core/log.cpp
+src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj
+ C:/FireStack/src/core/logging.cpp
 
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj
  C:/FireStack/src/core/math.cpp

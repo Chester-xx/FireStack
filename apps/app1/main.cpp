@@ -1,14 +1,13 @@
 // launch.json config to app1.exe | when working on other projects remember to change the exe name
-#include "log.h"
+#include "logging.h"
 #include "math.h"
+
+using namespace logging;
 
 int main() {
 
-    printf("hello");
-    std::string str = "asbd uasdu";
-    printf("how are you doing?", "\n", 87, 78.04f, str);
-    printf();
-    print();
+    print("test");
+    printf("check2", "\t", 3824);
 
     return EXIT_SUCCESS;
 }

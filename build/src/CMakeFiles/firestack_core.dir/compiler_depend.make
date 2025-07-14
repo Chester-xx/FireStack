@@ -3,7 +3,7 @@
 
 src/CMakeFiles/firestack_core.dir/core/input.cpp.obj: C:/FireStack/src/core/input.cpp
 
-src/CMakeFiles/firestack_core.dir/core/log.cpp.obj: C:/FireStack/src/core/log.cpp
+src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj: C:/FireStack/src/core/logging.cpp
 
 src/CMakeFiles/firestack_core.dir/core/math.cpp.obj: C:/FireStack/src/core/math.cpp \
   C:/FireStack/include/math.h \
@@ -148,8 +148,6 @@ C:/FireStack/src/ui/textbox.cpp:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/stl_function.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h:
-
 C:/mingw-w64/mingw64/include/c++/14.2.0/clocale:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/exception.h:
@@ -228,6 +226,12 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/malloc.h:
 
+C:/FireStack/include/math.h:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/stl_pair.h:
+
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/stl_algobase.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/std_abs.h:
@@ -242,9 +246,11 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/bits/nested_exception.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/cctype:
 
-C:/FireStack/include/math.h:
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+C:/FireStack/src/core/logging.cpp:
+
+C:/mingw-w64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/cmath:
 
@@ -252,15 +258,7 @@ C:/FireStack/src/core/input.cpp:
 
 C:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
 
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/stl_pair.h:
-
-C:/FireStack/src/core/log.cpp:
-
-C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
-
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/localefwd.h:
-
-C:/mingw-w64/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/refwrap.h:
 
@@ -334,9 +332,9 @@ C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/gamma.tcc:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc:
 
-C:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
-
 C:/mingw-w64/mingw64/include/c++/14.2.0/bits/stl_iterator.h:
+
+C:/mingw-w64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
 
 C:/mingw-w64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc:
 
@@ -363,6 +361,8 @@ C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/ctype.h:
+
+C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
 C:/mingw-w64/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 

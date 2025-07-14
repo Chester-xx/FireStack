@@ -160,29 +160,29 @@ core/input.cpp.s:
 	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.s
 .PHONY : core/input.cpp.s
 
-core/log.obj: core/log.cpp.obj
-.PHONY : core/log.obj
+core/logging.obj: core/logging.cpp.obj
+.PHONY : core/logging.obj
 
 # target to build an object file
-core/log.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/log.cpp.obj
-.PHONY : core/log.cpp.obj
+core/logging.cpp.obj:
+	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj
+.PHONY : core/logging.cpp.obj
 
-core/log.i: core/log.cpp.i
-.PHONY : core/log.i
+core/logging.i: core/logging.cpp.i
+.PHONY : core/logging.i
 
 # target to preprocess a source file
-core/log.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/log.cpp.i
-.PHONY : core/log.cpp.i
+core/logging.cpp.i:
+	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.i
+.PHONY : core/logging.cpp.i
 
-core/log.s: core/log.cpp.s
-.PHONY : core/log.s
+core/logging.s: core/logging.cpp.s
+.PHONY : core/logging.s
 
 # target to generate assembly for a file
-core/log.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/log.cpp.s
-.PHONY : core/log.cpp.s
+core/logging.cpp.s:
+	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.s
+.PHONY : core/logging.cpp.s
 
 core/math.obj: core/math.cpp.obj
 .PHONY : core/math.obj
@@ -341,9 +341,9 @@ help:
 	@echo ... core/input.obj
 	@echo ... core/input.i
 	@echo ... core/input.s
-	@echo ... core/log.obj
-	@echo ... core/log.i
-	@echo ... core/log.s
+	@echo ... core/logging.obj
+	@echo ... core/logging.i
+	@echo ... core/logging.s
 	@echo ... core/math.obj
 	@echo ... core/math.i
 	@echo ... core/math.s

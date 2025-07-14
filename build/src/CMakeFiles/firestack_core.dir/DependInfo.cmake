@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/FireStack/src/core/input.cpp" "src/CMakeFiles/firestack_core.dir/core/input.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/input.cpp.obj.d"
-  "C:/FireStack/src/core/log.cpp" "src/CMakeFiles/firestack_core.dir/core/log.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/log.cpp.obj.d"
+  "C:/FireStack/src/core/logging.cpp" "src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj.d"
   "C:/FireStack/src/core/math.cpp" "src/CMakeFiles/firestack_core.dir/core/math.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/math.cpp.obj.d"
   "C:/FireStack/src/ui/button.cpp" "src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj.d"
   "C:/FireStack/src/ui/label.cpp" "src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj.d"

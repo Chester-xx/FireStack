@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/firestack_core.dir/core/input.cpp.obj"
   "CMakeFiles/firestack_core.dir/core/input.cpp.obj.d"
-  "CMakeFiles/firestack_core.dir/core/log.cpp.obj"
-  "CMakeFiles/firestack_core.dir/core/log.cpp.obj.d"
+  "CMakeFiles/firestack_core.dir/core/logging.cpp.obj"
+  "CMakeFiles/firestack_core.dir/core/logging.cpp.obj.d"
   "CMakeFiles/firestack_core.dir/core/math.cpp.obj"
   "CMakeFiles/firestack_core.dir/core/math.cpp.obj.d"
   "CMakeFiles/firestack_core.dir/ui/button.cpp.obj"

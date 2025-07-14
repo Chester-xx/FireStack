@@ -1,5 +1,5 @@
 apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
- C:\FireStack\apps\app1\main.cpp C:/FireStack/include/log.h \
+ C:\FireStack\apps\app1\main.cpp C:/FireStack/include/logging.h \
  C:/mingw-w64/mingw64/include/c++/14.2.0/iostream \
  C:/mingw-w64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/mingw-w64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
