@@ -14,16 +14,22 @@
 // private methods
 
 namespace {
+
     template<typename t>
     static t power(t base, int exp) {
+
         if (exp == 0) return 1;
         if (exp == 1) return base;
+        
         t temp = 1;
-        for (t i = 0; i < exp; ++i) {
+        
+        for (int i = 0; i < exp; ++i) {
             temp *= base;
         }
+
         return temp;
     }
+
 } // namespace
 
 // public methods

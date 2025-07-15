@@ -9,9 +9,13 @@
 
 /* ---------------- Defines ---------------- */
 
-namespace logging {
+/* ---------------- Function Prototype Signatures ---------------- */
 
-    /* ---------------- Function Prototype Signatures ---------------- */
+// private methods
+
+// public methods
+
+namespace logging {
 
     // const expression for each arg value
     template<typename t>

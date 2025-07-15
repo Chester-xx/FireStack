@@ -12,5 +12,20 @@
 
 /* ---------------- Class Definitions + Function Prototype Signatures ---------------- */
 
+namespace userinterface {
+
+    class window {
+
+        public:
+
+        private:
+
+        protected:
+
+
+    }; // class window
+    
+
+} // namespace userinterface
 
 #endif
