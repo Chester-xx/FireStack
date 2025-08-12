@@ -1,5 +1,5 @@
-apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
- C:\Developer\Projects\FireStack\apps\app1\main.cpp \
+src/CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.obj: \
+ C:\Developer\Projects\FireStack\src\containers\linkedlists.cpp \
  C:/Developer/Projects/FireStack/include/linkedlists.h \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/iostream \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/requires_hosted.h \

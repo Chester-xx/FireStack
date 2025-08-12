@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\mingw-w64\mingw64\bin\cmake.exe
+CMAKE_COMMAND = C:\Developer\Tools\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\mingw-w64\mingw64\bin\cmake.exe -E rm -f
+RM = C:\Developer\Tools\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\FireStack
+CMAKE_SOURCE_DIR = C:\Developer\Projects\FireStack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\FireStack\build
+CMAKE_BINARY_DIR = C:\Developer\Projects\FireStack\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -145,14 +145,14 @@ src/clean: src/CMakeFiles/firestack_core.dir/clean
 src/CMakeFiles/firestack_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target firestack_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Developer\Projects\FireStack\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Built target firestack_core"
 .PHONY : src/CMakeFiles/firestack_core.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/firestack_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/firestack_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 0
 .PHONY : src/CMakeFiles/firestack_core.dir/rule
 
 # Convenience name for target.
@@ -162,7 +162,7 @@ firestack_core: src/CMakeFiles/firestack_core.dir/rule
 # codegen rule for target.
 src/CMakeFiles/firestack_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Finished codegen for target firestack_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Developer\Projects\FireStack\build\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Finished codegen for target firestack_core"
 .PHONY : src/CMakeFiles/firestack_core.dir/codegen
 
 # clean rule for target.
@@ -177,14 +177,14 @@ src/CMakeFiles/firestack_core.dir/clean:
 apps/app1/CMakeFiles/app1.dir/all: src/CMakeFiles/firestack_core.dir/all
 	$(MAKE) $(MAKESILENT) -f apps\app1\CMakeFiles\app1.dir\build.make apps/app1/CMakeFiles/app1.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps\app1\CMakeFiles\app1.dir\build.make apps/app1/CMakeFiles/app1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=1,2 "Built target app1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Developer\Projects\FireStack\build\CMakeFiles --progress-num=1,2 "Built target app1"
 .PHONY : apps/app1/CMakeFiles/app1.dir/all
 
 # Build rule for subdir invocation for target.
 apps/app1/CMakeFiles/app1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/app1/CMakeFiles/app1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 0
 .PHONY : apps/app1/CMakeFiles/app1.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ app1: apps/app1/CMakeFiles/app1.dir/rule
 # codegen rule for target.
 apps/app1/CMakeFiles/app1.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f apps\app1\CMakeFiles\app1.dir\build.make apps/app1/CMakeFiles/app1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\FireStack\build\CMakeFiles --progress-num=1,2 "Finished codegen for target app1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Developer\Projects\FireStack\build\CMakeFiles --progress-num=1,2 "Finished codegen for target app1"
 .PHONY : apps/app1/CMakeFiles/app1.dir/codegen
 
 # clean rule for target.

@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\mingw-w64\mingw64\bin\cmake.exe
+CMAKE_COMMAND = C:\Developer\Tools\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\mingw-w64\mingw64\bin\cmake.exe -E rm -f
+RM = C:\Developer\Tools\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\FireStack
+CMAKE_SOURCE_DIR = C:\Developer\Projects\FireStack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\FireStack\build
+CMAKE_BINARY_DIR = C:\Developer\Projects\FireStack\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\FireStack\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	C:\mingw-w64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Developer\Tools\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\mingw-w64\mingw64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Developer\Tools\mingw64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,21 +86,21 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\FireStack\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles C:\FireStack\build\src\\CMakeFiles\progress.marks
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 0
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles C:\Developer\Projects\FireStack\build\src\\CMakeFiles\progress.marks
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	cd /d C:\FireStack\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles C:\FireStack\build\src\\CMakeFiles\progress.marks
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\FireStack\build\CMakeFiles 0
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles C:\Developer\Projects\FireStack\build\src\\CMakeFiles\progress.marks
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -109,22 +109,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\FireStack\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/firestack_core.dir/rule:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/firestack_core.dir/rule
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/firestack_core.dir/rule
 .PHONY : src/CMakeFiles/firestack_core.dir/rule
 
 # Convenience name for target.
@@ -133,15 +133,39 @@ firestack_core: src/CMakeFiles/firestack_core.dir/rule
 
 # fast build rule for target.
 firestack_core/fast:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/build
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/build
 .PHONY : firestack_core/fast
+
+containers/linkedlists.obj: containers/linkedlists.cpp.obj
+.PHONY : containers/linkedlists.obj
+
+# target to build an object file
+containers/linkedlists.cpp.obj:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.obj
+.PHONY : containers/linkedlists.cpp.obj
+
+containers/linkedlists.i: containers/linkedlists.cpp.i
+.PHONY : containers/linkedlists.i
+
+# target to preprocess a source file
+containers/linkedlists.cpp.i:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.i
+.PHONY : containers/linkedlists.cpp.i
+
+containers/linkedlists.s: containers/linkedlists.cpp.s
+.PHONY : containers/linkedlists.s
+
+# target to generate assembly for a file
+containers/linkedlists.cpp.s:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.s
+.PHONY : containers/linkedlists.cpp.s
 
 core/input.obj: core/input.cpp.obj
 .PHONY : core/input.obj
 
 # target to build an object file
 core/input.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.obj
 .PHONY : core/input.cpp.obj
 
 core/input.i: core/input.cpp.i
@@ -149,7 +173,7 @@ core/input.i: core/input.cpp.i
 
 # target to preprocess a source file
 core/input.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.i
 .PHONY : core/input.cpp.i
 
 core/input.s: core/input.cpp.s
@@ -157,7 +181,7 @@ core/input.s: core/input.cpp.s
 
 # target to generate assembly for a file
 core/input.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.s
 .PHONY : core/input.cpp.s
 
 core/logging.obj: core/logging.cpp.obj
@@ -165,7 +189,7 @@ core/logging.obj: core/logging.cpp.obj
 
 # target to build an object file
 core/logging.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj
 .PHONY : core/logging.cpp.obj
 
 core/logging.i: core/logging.cpp.i
@@ -173,7 +197,7 @@ core/logging.i: core/logging.cpp.i
 
 # target to preprocess a source file
 core/logging.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.i
 .PHONY : core/logging.cpp.i
 
 core/logging.s: core/logging.cpp.s
@@ -181,7 +205,7 @@ core/logging.s: core/logging.cpp.s
 
 # target to generate assembly for a file
 core/logging.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/logging.cpp.s
 .PHONY : core/logging.cpp.s
 
 core/math.obj: core/math.cpp.obj
@@ -189,7 +213,7 @@ core/math.obj: core/math.cpp.obj
 
 # target to build an object file
 core/math.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/math.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/math.cpp.obj
 .PHONY : core/math.cpp.obj
 
 core/math.i: core/math.cpp.i
@@ -197,7 +221,7 @@ core/math.i: core/math.cpp.i
 
 # target to preprocess a source file
 core/math.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/math.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/math.cpp.i
 .PHONY : core/math.cpp.i
 
 core/math.s: core/math.cpp.s
@@ -205,7 +229,7 @@ core/math.s: core/math.cpp.s
 
 # target to generate assembly for a file
 core/math.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/math.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/math.cpp.s
 .PHONY : core/math.cpp.s
 
 ui/button.obj: ui/button.cpp.obj
@@ -213,7 +237,7 @@ ui/button.obj: ui/button.cpp.obj
 
 # target to build an object file
 ui/button.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj
 .PHONY : ui/button.cpp.obj
 
 ui/button.i: ui/button.cpp.i
@@ -221,7 +245,7 @@ ui/button.i: ui/button.cpp.i
 
 # target to preprocess a source file
 ui/button.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/button.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/button.cpp.i
 .PHONY : ui/button.cpp.i
 
 ui/button.s: ui/button.cpp.s
@@ -229,7 +253,7 @@ ui/button.s: ui/button.cpp.s
 
 # target to generate assembly for a file
 ui/button.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/button.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/button.cpp.s
 .PHONY : ui/button.cpp.s
 
 ui/label.obj: ui/label.cpp.obj
@@ -237,7 +261,7 @@ ui/label.obj: ui/label.cpp.obj
 
 # target to build an object file
 ui/label.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj
 .PHONY : ui/label.cpp.obj
 
 ui/label.i: ui/label.cpp.i
@@ -245,7 +269,7 @@ ui/label.i: ui/label.cpp.i
 
 # target to preprocess a source file
 ui/label.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/label.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/label.cpp.i
 .PHONY : ui/label.cpp.i
 
 ui/label.s: ui/label.cpp.s
@@ -253,7 +277,7 @@ ui/label.s: ui/label.cpp.s
 
 # target to generate assembly for a file
 ui/label.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/label.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/label.cpp.s
 .PHONY : ui/label.cpp.s
 
 ui/textbox.obj: ui/textbox.cpp.obj
@@ -261,7 +285,7 @@ ui/textbox.obj: ui/textbox.cpp.obj
 
 # target to build an object file
 ui/textbox.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.obj
 .PHONY : ui/textbox.cpp.obj
 
 ui/textbox.i: ui/textbox.cpp.i
@@ -269,7 +293,7 @@ ui/textbox.i: ui/textbox.cpp.i
 
 # target to preprocess a source file
 ui/textbox.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.i
 .PHONY : ui/textbox.cpp.i
 
 ui/textbox.s: ui/textbox.cpp.s
@@ -277,7 +301,7 @@ ui/textbox.s: ui/textbox.cpp.s
 
 # target to generate assembly for a file
 ui/textbox.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/textbox.cpp.s
 .PHONY : ui/textbox.cpp.s
 
 ui/ui_base.obj: ui/ui_base.cpp.obj
@@ -285,7 +309,7 @@ ui/ui_base.obj: ui/ui_base.cpp.obj
 
 # target to build an object file
 ui/ui_base.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.obj
 .PHONY : ui/ui_base.cpp.obj
 
 ui/ui_base.i: ui/ui_base.cpp.i
@@ -293,7 +317,7 @@ ui/ui_base.i: ui/ui_base.cpp.i
 
 # target to preprocess a source file
 ui/ui_base.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.i
 .PHONY : ui/ui_base.cpp.i
 
 ui/ui_base.s: ui/ui_base.cpp.s
@@ -301,7 +325,7 @@ ui/ui_base.s: ui/ui_base.cpp.s
 
 # target to generate assembly for a file
 ui/ui_base.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/ui_base.cpp.s
 .PHONY : ui/ui_base.cpp.s
 
 ui/window.obj: ui/window.cpp.obj
@@ -309,7 +333,7 @@ ui/window.obj: ui/window.cpp.obj
 
 # target to build an object file
 ui/window.cpp.obj:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/window.cpp.obj
 .PHONY : ui/window.cpp.obj
 
 ui/window.i: ui/window.cpp.i
@@ -317,7 +341,7 @@ ui/window.i: ui/window.cpp.i
 
 # target to preprocess a source file
 ui/window.cpp.i:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/window.cpp.i
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/window.cpp.i
 .PHONY : ui/window.cpp.i
 
 ui/window.s: ui/window.cpp.s
@@ -325,7 +349,7 @@ ui/window.s: ui/window.cpp.s
 
 # target to generate assembly for a file
 ui/window.cpp.s:
-	cd /d C:\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/window.cpp.s
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/window.cpp.s
 .PHONY : ui/window.cpp.s
 
 # Help Target
@@ -338,6 +362,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... firestack_core
+	@echo ... containers/linkedlists.obj
+	@echo ... containers/linkedlists.i
+	@echo ... containers/linkedlists.s
 	@echo ... core/input.obj
 	@echo ... core/input.i
 	@echo ... core/input.s
@@ -373,6 +400,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\FireStack\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,2 +1,2 @@
 src/CMakeFiles/firestack_core.dir/ui/label.cpp.obj: \
- C:\FireStack\src\ui\label.cpp
+ C:\Developer\Projects\FireStack\src\ui\label.cpp

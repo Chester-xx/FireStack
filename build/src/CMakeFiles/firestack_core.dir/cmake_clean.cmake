@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.obj"
+  "CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.obj.d"
   "CMakeFiles/firestack_core.dir/core/input.cpp.obj"
   "CMakeFiles/firestack_core.dir/core/input.cpp.obj.d"
   "CMakeFiles/firestack_core.dir/core/logging.cpp.obj"
