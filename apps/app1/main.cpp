@@ -6,11 +6,11 @@ using namespace logging;
 
 int main() {
 
-    List l;
+    List<int> l;
     l.Append(1);
     l.Append(2);
     l.Append(3);
-    l.Delete(3);
+    // l.Delete(3);
     l.PrintAll();
     println("Size: ", l.GetSize());
 

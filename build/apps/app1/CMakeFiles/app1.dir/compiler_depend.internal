@@ -67,6 +67,7 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/include/c++/14.2.0/clocale
  C:/Developer/Tools/mingw64/include/c++/14.2.0/concepts
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstddef
+ C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdint
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdio
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdlib
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cwchar
@@ -110,6 +111,7 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h
  C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h
  C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h
+ C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h
  C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/_mingw.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h
@@ -140,6 +142,7 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/signal.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stddef.h
+ C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdint.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdio.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdlib.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/swprintf.inl

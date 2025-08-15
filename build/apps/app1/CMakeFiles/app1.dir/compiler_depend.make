@@ -66,6 +66,7 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: C:/Developer/Projects/FireStack/apps
   C:/Developer/Tools/mingw64/include/c++/14.2.0/clocale \
   C:/Developer/Tools/mingw64/include/c++/14.2.0/concepts \
   C:/Developer/Tools/mingw64/include/c++/14.2.0/cstddef \
+  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdint \
   C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdio \
   C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdlib \
   C:/Developer/Tools/mingw64/include/c++/14.2.0/cwchar \
@@ -109,6 +110,7 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: C:/Developer/Projects/FireStack/apps
   C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
   C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+  C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/_mingw.h \
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -139,6 +141,7 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: C:/Developer/Projects/FireStack/apps
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/signal.h \
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
@@ -169,6 +172,8 @@ C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
 
 C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+
+C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/process.h:
 
 C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h:
 
@@ -398,7 +403,11 @@ C:/Developer/Tools/mingw64/include/c++/14.2.0/tuple:
 
 C:/Developer/Tools/mingw64/include/c++/14.2.0/typeinfo:
 
+C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdint.h:
+
 C:/Developer/Tools/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
+
+C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
 
 C:/Developer/Tools/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
@@ -436,10 +445,10 @@ C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
 C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/wchar.h:
 
+C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdint:
+
 C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/errno.h:
 
 C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/stringfwd.h:
 
 C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/malloc.h:
-
-C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/process.h:
