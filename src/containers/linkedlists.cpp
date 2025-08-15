@@ -9,6 +9,13 @@ using namespace logging;
 
 /* ---------------- Destructor ---------------- */
 
+
+/*
+* @brief Destructor that frees memory allocated by a lists construction and use when list goes out of scope.
+*
+* @param none
+* @return 
+*/
 List::~List() {
     Node * current = start;
     if (current == nullptr) {
@@ -19,9 +26,11 @@ List::~List() {
         delete current;
         current = next;
     };
-}
+} // List::~List()
+
 
 /* ---------------- Functions ---------------- */
+
 
 // --- Class Node ---
 
