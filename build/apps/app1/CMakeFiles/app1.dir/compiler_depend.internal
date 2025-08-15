@@ -3,8 +3,8 @@
 
 apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Projects/FireStack/apps/app1/main.cpp
+ C:/Developer/Projects/FireStack/include/linkedlists.h
  C:/Developer/Projects/FireStack/include/logging.h
- C:/Developer/Projects/FireStack/include/math.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/backward/binders.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bit
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/alloc_traits.h
@@ -46,7 +46,6 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/range_access.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/refwrap.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/requires_hosted.h
- C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/specfun.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/std_abs.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/stl_algobase.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/stl_construct.h
@@ -66,7 +65,6 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cctype
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cerrno
  C:/Developer/Tools/mingw64/include/c++/14.2.0/clocale
- C:/Developer/Tools/mingw64/include/c++/14.2.0/cmath
  C:/Developer/Tools/mingw64/include/c++/14.2.0/concepts
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstddef
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdio
@@ -86,7 +84,6 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/include/c++/14.2.0/iosfwd
  C:/Developer/Tools/mingw64/include/c++/14.2.0/iostream
  C:/Developer/Tools/mingw64/include/c++/14.2.0/istream
- C:/Developer/Tools/mingw64/include/c++/14.2.0/limits
  C:/Developer/Tools/mingw64/include/c++/14.2.0/new
  C:/Developer/Tools/mingw64/include/c++/14.2.0/ostream
  C:/Developer/Tools/mingw64/include/c++/14.2.0/pstl/pstl_config.h
@@ -96,18 +93,6 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/include/c++/14.2.0/string
  C:/Developer/Tools/mingw64/include/c++/14.2.0/string_view
  C:/Developer/Tools/mingw64/include/c++/14.2.0/system_error
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/bessel_function.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/beta_function.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/ell_integral.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/exp_integral.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/gamma.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/hypergeometric.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/legendre_function.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc
- C:/Developer/Tools/mingw64/include/c++/14.2.0/tr1/special_function_util.h
  C:/Developer/Tools/mingw64/include/c++/14.2.0/tuple
  C:/Developer/Tools/mingw64/include/c++/14.2.0/type_traits
  C:/Developer/Tools/mingw64/include/c++/14.2.0/typeinfo
@@ -142,7 +127,6 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/limits.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/locale.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/malloc.h
- C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/math.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/process.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/pthread.h
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/pthread_compat.h

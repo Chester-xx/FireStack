@@ -144,4 +144,6 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/ostream.tcc \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/istream \
- C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/istream.tcc
+ C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/istream.tcc \
+ C:/Developer/Projects/FireStack/include/logging.h \
+ C:/Developer/Projects/FireStack/include/logging.h

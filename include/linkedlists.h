@@ -4,6 +4,7 @@
 
 /* ---------------- File Inclusions ---------------- */
 #include <iostream>
+#include "logging.h"
 
 /* ---------------- Defines ---------------- */
 
@@ -21,10 +22,10 @@ class Node {
         Node * next;
 
         int Get() const;
-        void Set(const int val);
+        void Set(const int _value);
 
-        Node(const int val, Node * end);
-        Node(const int val);
+        Node(const int _value, Node * end);
+        Node(const int _value);
 
 };
 
@@ -35,9 +36,9 @@ class List {
         int size = 0;
 
     public:
-        void Append(const int val);
+        void Append(const int value);
         void DeleteLast();
-        void Delete(const int val);
+        void Delete(const int& value);
         
         void PrintAll() const;
         int GetSize() const;

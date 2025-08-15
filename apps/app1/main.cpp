@@ -1,5 +1,8 @@
 // launch.json config to app1.exe | when working on other projects remember to change the exe name
 #include "linkedlists.h"
+#include "logging.h"
+
+using namespace logging;
 
 int main() {
 
@@ -9,7 +12,7 @@ int main() {
     l.Append(3);
     l.Delete(3);
     l.PrintAll();
-    std::cout << "Size: " << l.GetSize() << std::endl;
+    println("Size: ", l.GetSize());
 
-    return 0;
+    return EXIT_SUCCESS;
 }
