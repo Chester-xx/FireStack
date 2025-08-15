@@ -1,0 +1,117 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.31"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.31"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "apps",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-apps-Debug-12c899f314185723a34a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.31"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "apps"
+				},
+				{
+					"build" : "apps/app1",
+					"jsonFile" : "directory-apps.app1-Debug-e1ca1c4d670d92a76c14.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.31"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "apps/app1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "FireStack",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "app1::@8bd8a3a752e2e9690ee1",
+					"jsonFile" : "target-app1-Debug-6195f23a11a55ca5070f.json",
+					"name" : "app1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "firestack_core::@145eef247bfb46b6828c",
+					"jsonFile" : "target-firestack_core-Debug-9022f707127b27963997.json",
+					"name" : "firestack_core",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Developer/Projects/FireStack/build",
+		"source" : "C:/Developer/Projects/FireStack"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

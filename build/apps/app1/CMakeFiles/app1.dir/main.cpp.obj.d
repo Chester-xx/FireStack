@@ -148,5 +148,4 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
  C:/Developer/Projects/FireStack/include/logging.h \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdint \
  C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
- C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/Developer/Projects/FireStack/include/logging.h
+ C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdint.h
