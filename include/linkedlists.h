@@ -102,113 +102,19 @@ class List {
         Node<t> * end = nullptr;
         uint32_t size = 0;
 
-    public:
-
-
-        /*
-        * @brief Returns either the first instance node pointer to the found item or a nullptr if the item was not found in list.
-        *
-        * @param value Value that will be searched for in the list.
-        * @return Node pointer to found item or nullptr.
-        * 
-        * @note Does not check tail edgecase, rather traverses from the head of the list.
-        */
-        Node<t> * Find(const t& value) {
-            Node<t> * current = start;
-            while (current != nullptr) {
-                if (current->Get() == value) {
-                    return current;
-                } else {
-                    current = current->next;
-                }
-            }
-            return nullptr;
-        } // template<typename t> Node<t> * Find(const t& value)
         
-
-        /*
-        * @brief Returns the value stored at index specified in list.
-        *
-        * @param index The positional node of the value that will be retrieved
-        * @return user specified type or NULL if the index is not valid
-        * 
-        * @note Does not check tail edgecase, rather traverses from the head of the list.
-        */
-        t GetAt(uint32_t index) const {
-            if (start == nullptr && end == nullptr) {
-                error("Error: Index '", index, "' is out of bounds.");
-                return t();
-            }
-            if (index >= size) {
-                error("Error: Index '", index, "' is out of bounds.");
-                return t();
-            }
-            Node<t> * current = start;
-            for (uint32_t i = 0; i < index; ++i) {
-                current = current->next;
-            }
-            return current->Get();
-        } // t GetAt(uint32_t index) const
-
-
-        /*
-        * @brief Empties the list, deleting all contained values and setting size to 0.
-        *
-        * @param none
-        * @return void
-        */
-        void Clear() {
-            if (start == nullptr && end == nullptr) {
-                return;
-            }
-            Node<t> * current = start;
-            while (current != nullptr) {
-                Node<t> * next = current->next;
-                delete current;
-                current = next;
-            }
-            start = nullptr;
-            end = nullptr;
-            size = 0;
-        } // void Clear()
-
-
-        /*
-        * @brief Return a bool on whether a value is present in list.
-        *
-        * @param value Value that will be searched for in the list.
-        * @return boolean on whether an item of such exists in list.
-        * 
-        * @note Checks edge cases first.
-        */
-        bool Contains(const t& value) {
-            if (start == nullptr && end == nullptr) {
-                return false;
-            }
-            if (start->Get() == value || end->Get() == value) {
-                return true;
-            }
-            Node<t> * current = start->next;
-            while (current != nullptr) {
-                if (current->Get() == value) {
-                    return true;
-                } else {
-                    current = current->next;
-                }
-            }
-            return false;
-        } // bool Contains(const t& value)
-
-
+    public:
+        
+        
         /*
         * @brief Adds value to list at the head of list.
         *
         * @param value Value that will be appended to list.
         * @return void
         */
-        void InsertFirst(const t& value) {
-            if (start == nullptr && end == nullptr) {
-                start = end = new Node<t>(value);
+       void InsertFirst(const t& value) {
+           if (start == nullptr && end == nullptr) {
+               start = end = new Node<t>(value);
             } else {
                 Node<t> * NewNode = new Node<t>(value);
                 start->prev = NewNode;
@@ -217,7 +123,25 @@ class List {
             }
             size++;
         }
+        
 
+        /*
+        * @brief Adds value to list at the tail of list.
+        *
+        * @param value Value that will be appended to list
+        * @return void
+        */
+        void InsertLast(const t& value) {
+            if (start == nullptr && end == nullptr) {
+                start = end = new Node<t>(value);
+            } else {
+                Node<t> * NewNode = new Node<t>(value, end);
+                end->next = NewNode;
+                end = NewNode;
+            }
+            size++;
+        } // void Append(const t& value)
+        
 
         /*
         * @brief Adds value to list at the index position "index" of list.
@@ -227,7 +151,7 @@ class List {
         * @return void
         * @note Index will always begin counting from 0.
         */
-        void InsertAt(const uint32_t& index, const t& value) {
+       void InsertAt(const uint32_t& index, const t& value) {
             if (size < index) {
                 error("Error: Cannot insert into list at index : '", index, "' as it is bigger than the list's size.");
                 return;
@@ -256,22 +180,41 @@ class List {
 
 
         /*
-        * @brief Adds value to list at the tail of list.
+        * @brief 
         *
-        * @param value Value that will be appended to list
+        * @param 
         * @return void
         */
-        void InsertLast(const t& value) {
-            if (start == nullptr && end == nullptr) {
-                start = end = new Node<t>(value);
-            } else {
-                Node<t> * NewNode = new Node<t>(value, end);
-                end->next = NewNode;
-                end = NewNode;
-            }
-            size++;
-        } // void Append(const t& value)
+        void InsertMany() {
 
+        } // 
+
+
+        /*
+        * @brief Deletes the first item or "head", from list.
+        *
+        * @param none
+        * @return void
+        */
+       void DeleteFirst() {
+            if (start == nullptr && end == nullptr) {
+                println("No items stored");
+                return;
+            }
+            if (start == end) {
+                delete start;
+                start = end = nullptr;
+                size--;
+                return;
+            } else {
+                Node<t> * del = start;
+                start->next->prev = nullptr;
+                start = del->next;
+                delete del;
+                size--;
+            }
+        } // void DeleteFirst()
+        
 
         /*
         * @brief Deletes the last item or "tail", from list.
@@ -296,33 +239,7 @@ class List {
            }
            size--;
        } // void DeleteLast()
-
-
-        /*
-        * @brief Deletes the first item or "head", from list.
-        *
-        * @param none
-        * @return void
-        */
-        void DeleteFirst() {
-            if (start == nullptr && end == nullptr) {
-                println("No items stored");
-                return;
-            }
-            if (start == end) {
-                delete start;
-                start = end = nullptr;
-                size--;
-                return;
-            } else {
-                Node<t> * del = start;
-                start->next->prev = nullptr;
-                start = del->next;
-                delete del;
-                size--;
-            }
-        } // void DeleteFirst()
-
+        
 
         /*
         * @brief Deletes the value at specified index in list.
@@ -451,14 +368,30 @@ class List {
 
 
         /*
-        * @brief Returns the total number of nodes in list.
+        * @brief Return a bool on whether a value is present in list.
         *
-        * @param none
-        * @return uint32_t unsigned 32 bit integer
+        * @param value Value that will be searched for in the list.
+        * @return boolean on whether an item of such exists in list.
+        * 
+        * @note Checks edge cases first.
         */
-        uint32_t GetSize() const {
-            return size;
-        } // uint32_t GetSize() const
+        bool Contains(const t& value) {
+            if (start == nullptr && end == nullptr) {
+                return false;
+            }
+            if (start->Get() == value || end->Get() == value) {
+                return true;
+            }
+            Node<t> * current = start->next;
+            while (current != nullptr) {
+                if (current->Get() == value) {
+                    return true;
+                } else {
+                    current = current->next;
+                }
+            }
+            return false;
+        } // bool Contains(const t& value)
 
 
         /*
@@ -475,6 +408,85 @@ class List {
                 return false;
             }
         } // bool IsEmpty()
+
+
+        /*
+        * @brief Returns the total number of nodes in list.
+        *
+        * @param none
+        * @return uint32_t unsigned 32 bit integer
+        */
+        uint32_t GetSize() const {
+            return size;
+        } // uint32_t GetSize() const
+
+
+        /*
+        * @brief Returns either the first instance node pointer to the found item or a nullptr if the item was not found in list.
+        *
+        * @param value Value that will be searched for in the list.
+        * @return Node pointer to found item or nullptr.
+        * 
+        * @note Does not check tail edgecase, rather traverses from the head of the list.
+        */
+        Node<t> * Find(const t& value) {
+            Node<t> * current = start;
+            while (current != nullptr) {
+                if (current->Get() == value) {
+                    return current;
+                } else {
+                    current = current->next;
+                }
+            }
+            return nullptr;
+        } // template<typename t> Node<t> * Find(const t& value)
+        
+
+        /*
+        * @brief Returns the value stored at index specified in list.
+        *
+        * @param index The positional node of the value that will be retrieved
+        * @return user specified type or NULL if the index is not valid
+        * 
+        * @note Does not check tail edgecase, rather traverses from the head of the list.
+        */
+        t GetAt(uint32_t index) const {
+            if (start == nullptr && end == nullptr) {
+                error("Error: Index '", index, "' is out of bounds.");
+                return t();
+            }
+            if (index >= size) {
+                error("Error: Index '", index, "' is out of bounds.");
+                return t();
+            }
+            Node<t> * current = start;
+            for (uint32_t i = 0; i < index; ++i) {
+                current = current->next;
+            }
+            return current->Get();
+        } // t GetAt(uint32_t index) const
+
+
+        /*
+        * @brief Empties the list, deleting all contained values and setting size to 0.
+        *
+        * @param none
+        * @return void
+        */
+        void Clear() {
+            if (start == nullptr && end == nullptr) {
+                return;
+            }
+            Node<t> * current = start;
+            while (current != nullptr) {
+                Node<t> * next = current->next;
+                delete current;
+                current = next;
+            }
+            start = nullptr;
+            end = nullptr;
+            size = 0;
+        } // void Clear()
 
 
         /*
