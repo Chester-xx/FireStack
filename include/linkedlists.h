@@ -4,8 +4,9 @@
 
 /* ---------------- File Inclusions ---------------- */
 #include <iostream>
-#include "logging.h"
 #include <cstdint>
+#include <type_traits>
+#include "logging.h"
 
 /* ---------------- Defines ---------------- */
 using namespace logging;
@@ -412,9 +413,13 @@ class List {
         *
         * @param none
         * @return void
+        * 
+        * @note Strings are logged within double quotes `""`, char's and const char *'s are logged within single quotes `''` and all other types have no wrapping within characters.
         */
         void PrintAll() const {
             Node<t> * current = start;
+            constexpr bool is_char_or_p = std::is_same_v<t, char> || std::is_same_v<t, const char *>;
+            constexpr bool is_str = std::is_same_v<t, std::string>;
             if (start == nullptr) {
                 println("Empty list");
                 return;
@@ -422,13 +427,25 @@ class List {
             print("[");
             while (current != nullptr) {
                 if (current->next == nullptr) {
-                    print(current->Get());
+                    if (is_str) {
+                        print("\"", current->Get(), "\"");
+                    } else if (is_char_or_p) {
+                        print("\'", current->Get(), "\'");
+                    } else {
+                        print(current->Get());
+                    }
                 } else {
-                    print(current->Get(), ", ");
+                    if (is_str) {
+                        print("\"", current->Get(), "\", ");
+                    } else if (is_char_or_p) {
+                        print("\'", current->Get(), "\', ");
+                    } else {
+                        print(current->Get(), ", ");
+                    }
                 }
                 current = current->next;
             }
-            print("]\n");
+            println("]");
             return;
         } // void PrintAll() const
 
