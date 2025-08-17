@@ -1,8 +1,8 @@
 // --- Tests ---
 
-#include "linkedlists.h"
+#include "container\linkedlists.h"
+#include "core\logging.h"
 #include <string>
-#include "logging.h"
 
 using namespace logging;
 

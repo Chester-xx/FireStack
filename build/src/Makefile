@@ -136,53 +136,29 @@ firestack_core/fast:
 	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/build
 .PHONY : firestack_core/fast
 
-containers/linkedlists.obj: containers/linkedlists.cpp.obj
-.PHONY : containers/linkedlists.obj
+container/linkedlists.obj: container/linkedlists.cpp.obj
+.PHONY : container/linkedlists.obj
 
 # target to build an object file
-containers/linkedlists.cpp.obj:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.obj
-.PHONY : containers/linkedlists.cpp.obj
+container/linkedlists.cpp.obj:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.obj
+.PHONY : container/linkedlists.cpp.obj
 
-containers/linkedlists.i: containers/linkedlists.cpp.i
-.PHONY : containers/linkedlists.i
-
-# target to preprocess a source file
-containers/linkedlists.cpp.i:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.i
-.PHONY : containers/linkedlists.cpp.i
-
-containers/linkedlists.s: containers/linkedlists.cpp.s
-.PHONY : containers/linkedlists.s
-
-# target to generate assembly for a file
-containers/linkedlists.cpp.s:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/containers/linkedlists.cpp.s
-.PHONY : containers/linkedlists.cpp.s
-
-core/input.obj: core/input.cpp.obj
-.PHONY : core/input.obj
-
-# target to build an object file
-core/input.cpp.obj:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.obj
-.PHONY : core/input.cpp.obj
-
-core/input.i: core/input.cpp.i
-.PHONY : core/input.i
+container/linkedlists.i: container/linkedlists.cpp.i
+.PHONY : container/linkedlists.i
 
 # target to preprocess a source file
-core/input.cpp.i:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.i
-.PHONY : core/input.cpp.i
+container/linkedlists.cpp.i:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.i
+.PHONY : container/linkedlists.cpp.i
 
-core/input.s: core/input.cpp.s
-.PHONY : core/input.s
+container/linkedlists.s: container/linkedlists.cpp.s
+.PHONY : container/linkedlists.s
 
 # target to generate assembly for a file
-core/input.cpp.s:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/core/input.cpp.s
-.PHONY : core/input.cpp.s
+container/linkedlists.cpp.s:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.s
+.PHONY : container/linkedlists.cpp.s
 
 core/logging.obj: core/logging.cpp.obj
 .PHONY : core/logging.obj
@@ -255,6 +231,30 @@ ui/button.s: ui/button.cpp.s
 ui/button.cpp.s:
 	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/button.cpp.s
 .PHONY : ui/button.cpp.s
+
+ui/input.obj: ui/input.cpp.obj
+.PHONY : ui/input.obj
+
+# target to build an object file
+ui/input.cpp.obj:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/input.cpp.obj
+.PHONY : ui/input.cpp.obj
+
+ui/input.i: ui/input.cpp.i
+.PHONY : ui/input.i
+
+# target to preprocess a source file
+ui/input.cpp.i:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/input.cpp.i
+.PHONY : ui/input.cpp.i
+
+ui/input.s: ui/input.cpp.s
+.PHONY : ui/input.s
+
+# target to generate assembly for a file
+ui/input.cpp.s:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/ui/input.cpp.s
+.PHONY : ui/input.cpp.s
 
 ui/label.obj: ui/label.cpp.obj
 .PHONY : ui/label.obj
@@ -362,12 +362,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... firestack_core
-	@echo ... containers/linkedlists.obj
-	@echo ... containers/linkedlists.i
-	@echo ... containers/linkedlists.s
-	@echo ... core/input.obj
-	@echo ... core/input.i
-	@echo ... core/input.s
+	@echo ... container/linkedlists.obj
+	@echo ... container/linkedlists.i
+	@echo ... container/linkedlists.s
 	@echo ... core/logging.obj
 	@echo ... core/logging.i
 	@echo ... core/logging.s
@@ -377,6 +374,9 @@ help:
 	@echo ... ui/button.obj
 	@echo ... ui/button.i
 	@echo ... ui/button.s
+	@echo ... ui/input.obj
+	@echo ... ui/input.i
+	@echo ... ui/input.s
 	@echo ... ui/label.obj
 	@echo ... ui/label.i
 	@echo ... ui/label.s

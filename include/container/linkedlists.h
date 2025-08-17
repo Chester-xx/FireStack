@@ -6,7 +6,7 @@
 #include <iostream>
 #include <cstdint>
 #include <type_traits>
-#include "logging.h"
+#include "core\logging.h"
 
 /* ---------------- Defines ---------------- */
 using namespace logging;
