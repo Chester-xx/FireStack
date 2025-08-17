@@ -28,4 +28,4 @@ namespace userinterface {
 
 } // namespace userinterface
 
-#endif
+#endif // #ifndef UI_BASE_H

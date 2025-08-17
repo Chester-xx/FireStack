@@ -89,4 +89,4 @@ namespace logging {
 
 } // namespace logging
 
-#endif // LOGGING_H
+#endif // #ifndef LOGGING_H

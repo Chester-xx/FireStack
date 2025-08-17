@@ -150,4 +150,4 @@ namespace math {
 /* ---------------- Class Definitions + Function Prototype Signatures ---------------- */
 
 
-#endif
+#endif // #ifndef MATH_H
