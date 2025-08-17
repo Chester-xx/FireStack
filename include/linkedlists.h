@@ -17,13 +17,17 @@ using namespace logging;
 /* ---------------- Class Definitions + Function Prototype Signatures ---------------- */
 
 /*
-* @brief Node class for List class.
+* @brief Node class for List class. Should i eventually make this private and maybe contained private within List class?
 *
 * @param value Private main value or content of node.
 * @param prev Pointer to previous node.
 * @param next Pointer to the following node.
 *
-* @note Functions: Get() | Set(_value) | Node(_value, end) | Node(_value).
+* @note `Functions`
+* @note Get()
+* @note Set(_value)
+* @note Node(_value, end) - Constructor
+* @note Node(_value) - Constructor
 */
 template<typename t>
 class Node {
@@ -83,7 +87,7 @@ class Node {
         } // Node(const t& _value)
 
 
-};
+}; // template<typename t> class Node
 
 
 /*
@@ -93,16 +97,32 @@ class Node {
 * @param end Pointer to the tail of list.
 * @param size The total count of items stored in list.
 *
-* @note Functions: Append(value) | DeleteLast() | Delete(value) | PrintAll() | GetSize().
+* @note `Functions`
+* @note InsertFirst(value)
+* @note InsertLast(value)
+* @note InsertAt(index, value)
+* @note InsertMany(args...)
+* @note DeleteFirst()
+* @note DeleteLast()
+* @note DeleteAt(index)
+* @note DeleteValue(value)
+* @note PrintAll()
+* @note Contains(value)
+* @note IsEmpty()
+* @note GetSize()
+* @note Find(value)
+* @note GetAt(index)
+* @note Clear()
+* @note ~List() - Destructor
 */
 template<typename t>
 class List {
     private:
         Node<t> * start = nullptr;
         Node<t> * end = nullptr;
-        uint32_t size = 0;
+        size_t size = 0;
 
-        
+
     public:
         
         
@@ -151,7 +171,7 @@ class List {
         * @return void
         * @note Index will always begin counting from 0.
         */
-       void InsertAt(const uint32_t& index, const t& value) {
+       void InsertAt(const size_t& index, const t& value) {
             if (size < index) {
                 error("Error: Cannot insert into list at index : '", index, "' as it is bigger than the list's size.");
                 return;
@@ -165,7 +185,7 @@ class List {
                 return;
             }
             Node<t> * current = start;
-            for (uint32_t i = 0; i < index; i++) {
+            for (size_t i = 0; i < index; i++) {
                 current = current->next;
             }
             Node<t> * NewNode = new Node(value);
@@ -176,18 +196,22 @@ class List {
             
 
             size++;
-        } // void InsertAt(uint32_t& index, const t& value)
+        } // void InsertAt(size_t& index, const t& value)
 
 
         /*
-        * @brief 
+        * @brief Inserts user defined length of items to list.
         *
-        * @param 
+        * @note `static assertion` on all variadic types to ensure they match with the lists template type.
+        *
+        * @param args Variadic template, allows the user to enter as many arguments as they want into the function parameter.
         * @return void
         */
-        void InsertMany() {
-
-        } // 
+        template<typename... arguments>
+        void InsertMany(const arguments&... args) {
+            static_assert((std::is_same_v<t, arguments> && ...), "Source file function 'List::InsertMany()' only supports one template type, ensure all function parameter types match the list's template type.");
+            (InsertLast(args), ...);
+        } // template<typename... arguments> void InsertMany(const arguments&... args)
 
 
         /*
@@ -248,7 +272,7 @@ class List {
         * @param value Value that will be deleted from list.
         * @return void
         */
-        void DeleteAt(const uint32_t& index) {
+        void DeleteAt(const size_t& index) {
             if (start == nullptr && end == nullptr) {
                 println("Empty list");
                 return;
@@ -266,14 +290,14 @@ class List {
                 return;
             }
             Node<t> * del = start;
-            for (uint32_t i = 0; i < index; ++i) {
+            for (size_t i = 0; i < index; ++i) {
                 del = del->next;
             }
             del->prev->next = del->next;
             del->next->prev = del->prev;
             delete del;
             size--;
-        } // void DeleteAt(const uint32_t& index)
+        } // void DeleteAt(const size_t& index)
         
 
         /*
@@ -414,11 +438,11 @@ class List {
         * @brief Returns the total number of nodes in list.
         *
         * @param none
-        * @return uint32_t unsigned 32 bit integer
+        * @return size_t unsigned long long integer
         */
-        uint32_t GetSize() const {
+        size_t GetSize() const {
             return size;
-        } // uint32_t GetSize() const
+        } // size_t GetSize() const
 
 
         /*
@@ -450,7 +474,7 @@ class List {
         * 
         * @note Does not check tail edgecase, rather traverses from the head of the list.
         */
-        t GetAt(uint32_t index) const {
+        t GetAt(size_t index) const {
             if (start == nullptr && end == nullptr) {
                 error("Error: Index '", index, "' is out of bounds.");
                 return t();
@@ -460,11 +484,11 @@ class List {
                 return t();
             }
             Node<t> * current = start;
-            for (uint32_t i = 0; i < index; ++i) {
+            for (size_t i = 0; i < index; ++i) {
                 current = current->next;
             }
             return current->Get();
-        } // t GetAt(uint32_t index) const
+        } // t GetAt(size_t index) const
 
 
         /*
@@ -506,7 +530,9 @@ class List {
                 current = next;
             }
         } // ~List()
-};
+
+
+}; // template<typename t> class List
 
 
 #endif

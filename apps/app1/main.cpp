@@ -7,11 +7,9 @@
 using namespace logging;
 
 int main() {
-    List<std::string> l;
+    List<int> l;
 
-    l.InsertLast("str1");
-    l.InsertLast("string 2, test");
-    l.InsertLast("1");
+    l.InsertMany(1, 2, 3, 4, 6, 8, 10, 15, 20, 30, 100, 9000);
     l.PrintAll();
     println("End");
 
