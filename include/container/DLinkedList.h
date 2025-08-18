@@ -1,3 +1,5 @@
+// NB! - Implement constructor for dlikedlist class that allows the init of a list with multivalues
+
 /* ---------------- Linker Map ---------------- */
 #ifndef DLINKEDLIST_H
 #define DLINKEDLIST_H
@@ -23,18 +25,19 @@ namespace container {
     /*
     * @brief Node class for DoublyLinkedList class.
     *
-    * @param value Private main value or content of node.
+    * @param value Private main data or content of node.
     * @param prev Pointer to previous node.
     * @param next Pointer to the following node.
     *
     * @note `Functions`
     * @note Get()
     * @note Set(_value)
-    * @note Node(_value, end) - Constructor
-    * @note Node(_value) - Constructor
+    * @note DNode(_value, end) - Constructor
+    * @note DNode(_value) - Constructor
     */
     template<typename t>
     class DNode {
+
         private:
             t value;
     
@@ -42,11 +45,12 @@ namespace container {
             DNode<t> * prev;
             DNode<t> * next;
     
+
             /*
             * @brief Returns private value of node.
             *
             * @param none
-            * @return template value corresponding users type specifier
+            * @return template value corresponding users type specifier.
             */
             t Get() const {
                 return value;
@@ -65,7 +69,7 @@ namespace container {
     
     
             /*
-            * @brief Node Class Constructor.
+            * @brief DNode Class Constructor.
             *
             * @param _value The new nodes value.
             * @param end Pointer to the end of the list.
@@ -75,11 +79,11 @@ namespace container {
                 value = _value;
                 prev = end;
                 next = nullptr;
-            } // Node(const t& _value, Node<t> * end)
+            } // DNode(const t& _value, DNode<t> * end)
     
     
             /*
-            * @brief Node Class Constructor.
+            * @brief DNode Class Constructor.
             *
             * @param _value The new nodes value.
             * @return 
@@ -88,18 +92,18 @@ namespace container {
                 value = _value;
                 prev = nullptr;
                 next = nullptr;
-            } // Node(const t& _value)
+            } // DNode(const t& _value)
     
     
-    }; // template<typename t> class Node
+    }; // template<typename t> class DNode
     
     
     /*
-    * @brief DoublyLinkedList Class for Doubly Linked List Structure, attributes and methods
+    * @brief DoublyLinkedList Class for Doubly Linked List Structure, attributes and methods.
     *
-    * @param start Pointer to the head of list.
+    * @param start Pointer to the head of the list.
     * @param end Pointer to the tail of list.
-    * @param size The total count of items stored in list.
+    * @param size The total count of items stored in the list.
     *
     * @note `Functions`
     * @note InsertFirst(value)
@@ -121,11 +125,11 @@ namespace container {
     */
     template<typename t>
     class DoublyLinkedList {
+    
         private:
             DNode<t> * start = nullptr;
             DNode<t> * end = nullptr;
             size_t size = 0;
-    
     
         public:
             
@@ -150,9 +154,9 @@ namespace container {
             
     
             /*
-            * @brief Adds value to list at the tail of list.
+            * @brief Adds value to list at the tail of the list.
             *
-            * @param value Value that will be appended to list
+            * @param value Value that will be appended to the list
             * @return void
             */
             void InsertLast(const t& value) {
@@ -164,13 +168,13 @@ namespace container {
                     end = NewNode;
                 }
                 size++;
-            } // void Append(const t& value)
+            } // void InsertLast(const t& value)
             
     
             /*
-            * @brief Adds value to list at the index position "index" of list.
+            * @brief Adds value to list at the index position "index" of the list.
             *
-            * @param value Value that will be appended to list.
+            * @param value Value that will be appended to the list.
             * @param index Position where the value will be appended to in the list.
             * @return void
             * @note Index will always begin counting from 0.
