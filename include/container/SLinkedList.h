@@ -161,7 +161,7 @@ namespace container {
             * @return void
             * @note Index will always begin counting from 0.
             */
-            InsertAt(const size_t& index, const t& value) {
+            void InsertAt(const size_t& index, const t& value) {
                 if (size < index) {
                     logging::error("Error: Cannot insert into list at index : '", index, "' as it is bigger than the list's size.");
                     return;
