@@ -51,6 +51,14 @@ namespace container {
     * @param
     * @return
     */
+    template<typename t>
+    class SNode {
+        private:
+            t value;
+            SNode<t> * next = nullptr;
+        public:
+
+    };
 
 } // namespace container
 
