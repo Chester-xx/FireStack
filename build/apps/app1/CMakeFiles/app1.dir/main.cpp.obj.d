@@ -1,7 +1,7 @@
 apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
  C:\Developer\Projects\FireStack\apps\app1\main.cpp \
  C:/Developer/Projects/FireStack/include/container.h \
- C:/Developer/Projects/FireStack/include/container\linkedlists.h \
+ C:/Developer/Projects/FireStack/include/container/DLinkedList.h \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/iostream \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -149,4 +149,5 @@ apps/app1/CMakeFiles/app1.dir/main.cpp.obj: \
  C:/Developer/Tools/mingw64/include/c++/14.2.0/cstdint \
  C:/Developer/Tools/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/Developer/Tools/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/Developer/Projects/FireStack/include/core\logging.h
+ C:/Developer/Projects/FireStack/include/core/logging.h \
+ C:/Developer/Projects/FireStack/include/container/SLinkedList.h

@@ -1,12 +1,12 @@
 /* ---------------- Linker Map ---------------- */
-#ifndef LINKEDLISTS_H
-#define LINKEDLISTS_H
+#ifndef DLINKEDLIST_H
+#define DLINKEDLIST_H
 
 /* ---------------- File Inclusions ---------------- */
 #include <iostream>
 #include <cstdint>
 #include <type_traits>
-#include "core\logging.h"
+#include "core/logging.h"
 
 /* ---------------- Defines ---------------- */
 
@@ -21,7 +21,7 @@ namespace container {
 
 
     /*
-    * @brief Node class for List class. Should i eventually make this private and maybe contained private within List class?
+    * @brief Node class for DoublyLinkedList class.
     *
     * @param value Private main value or content of node.
     * @param prev Pointer to previous node.
@@ -34,13 +34,13 @@ namespace container {
     * @note Node(_value) - Constructor
     */
     template<typename t>
-    class Node {
+    class DNode {
         private:
             t value;
     
         public:
-            Node<t> * prev;
-            Node<t> * next;
+            DNode<t> * prev;
+            DNode<t> * next;
     
             /*
             * @brief Returns private value of node.
@@ -71,7 +71,7 @@ namespace container {
             * @param end Pointer to the end of the list.
             * @return 
             */
-            Node(const t& _value, Node<t> * end) {
+            DNode(const t& _value, DNode<t> * end) {
                 value = _value;
                 prev = end;
                 next = nullptr;
@@ -84,7 +84,7 @@ namespace container {
             * @param _value The new nodes value.
             * @return 
             */
-            Node(const t& _value) {
+            DNode(const t& _value) {
                 value = _value;
                 prev = nullptr;
                 next = nullptr;
@@ -95,7 +95,7 @@ namespace container {
     
     
     /*
-    * @brief List Class for Doubly Linked List Structure, attributes and methods
+    * @brief DoublyLinkedList Class for Doubly Linked List Structure, attributes and methods
     *
     * @param start Pointer to the head of list.
     * @param end Pointer to the tail of list.
@@ -117,13 +117,13 @@ namespace container {
     * @note Find(value)
     * @note GetAt(index)
     * @note Clear()
-    * @note ~List() - Destructor
+    * @note ~DoublyLinkedList() - Destructor
     */
     template<typename t>
-    class List {
+    class DoublyLinkedList {
         private:
-            Node<t> * start = nullptr;
-            Node<t> * end = nullptr;
+            DNode<t> * start = nullptr;
+            DNode<t> * end = nullptr;
             size_t size = 0;
     
     
@@ -138,9 +138,9 @@ namespace container {
             */
            void InsertFirst(const t& value) {
                if (start == nullptr && end == nullptr) {
-                   start = end = new Node<t>(value);
+                   start = end = new DNode<t>(value);
                 } else {
-                    Node<t> * NewNode = new Node<t>(value);
+                    DNode<t> * NewNode = new DNode<t>(value);
                     start->prev = NewNode;
                     NewNode->next = start;
                     start = NewNode;
@@ -157,9 +157,9 @@ namespace container {
             */
             void InsertLast(const t& value) {
                 if (start == nullptr && end == nullptr) {
-                    start = end = new Node<t>(value);
+                    start = end = new DNode<t>(value);
                 } else {
-                    Node<t> * NewNode = new Node<t>(value, end);
+                    DNode<t> * NewNode = new DNode<t>(value, end);
                     end->next = NewNode;
                     end = NewNode;
                 }
@@ -188,11 +188,11 @@ namespace container {
                     InsertLast(value);
                     return;
                 }
-                Node<t> * current = start;
+                DNode<t> * current = start;
                 for (size_t i = 0; i < index; i++) {
                     current = current->next;
                 }
-                Node<t> * NewNode = new Node(value);
+                DNode<t> * NewNode = new DNode(value);
                 NewNode->prev = current->prev;
                 NewNode->next = current;
                 current->prev->next = NewNode;
@@ -213,7 +213,7 @@ namespace container {
             */
             template<typename... arguments>
             void InsertMany(const arguments&... args) {
-                static_assert((std::is_same_v<t, arguments> && ...), "Source file function 'List::InsertMany()' only supports one template type, ensure all function parameter types match the list's template type.");
+                static_assert((std::is_same_v<t, arguments> && ...), "Source file function 'container::DoublyLinkedList::InsertMany()' only supports one template type, ensure all function parameter types match the list's template type.");
                 (InsertLast(args), ...);
             } // template<typename... arguments> void InsertMany(const arguments&... args)
     
@@ -235,7 +235,7 @@ namespace container {
                     size--;
                     return;
                 } else {
-                    Node<t> * del = start;
+                    DNode<t> * del = start;
                     start->next->prev = nullptr;
                     start = del->next;
                     delete del;
@@ -260,7 +260,7 @@ namespace container {
                    start = end = nullptr;
                    return;
                } else {
-                   Node<t> * del = end;
+                   DNode<t> * del = end;
                    end->prev->next = nullptr;
                    end = del->prev;
                    delete del;
@@ -293,7 +293,7 @@ namespace container {
                     DeleteLast();
                     return;
                 }
-                Node<t> * del = start;
+                DNode<t> * del = start;
                 for (size_t i = 0; i < index; ++i) {
                     del = del->next;
                 }
@@ -317,8 +317,8 @@ namespace container {
                     logging::println("Empty list");
                     return;
                 }
-                Node<t> * current = start;
-                Node<t> * target = nullptr;
+                DNode<t> * current = start;
+                DNode<t> * target = nullptr;
                 while (current != nullptr) {
                     if (current->Get() == value) {
                         target = current;
@@ -330,8 +330,8 @@ namespace container {
                     logging::println("Item not found");
                     return;
                 }
-                Node<t> * _prev = target->prev;
-                Node<t> * _next = target->next;
+                DNode<t> * _prev = target->prev;
+                DNode<t> * _next = target->next;
                 if (target == end) {
                     DeleteLast();
                     return;
@@ -362,7 +362,7 @@ namespace container {
             * @note Strings are logged within double quotes `""`, char's and const char *'s are logged within single quotes `''` and all other types have no wrapping within characters.
             */
             void PrintAll() const {
-                Node<t> * current = start;
+                DNode<t> * current = start;
                 constexpr bool is_char_or_p = std::is_same_v<t, char> || std::is_same_v<t, const char *>;
                 constexpr bool is_str = std::is_same_v<t, std::string>;
                 if (start == nullptr) {
@@ -410,7 +410,7 @@ namespace container {
                 if (start->Get() == value || end->Get() == value) {
                     return true;
                 }
-                Node<t> * current = start->next;
+                DNode<t> * current = start->next;
                 while (current != nullptr) {
                     if (current->Get() == value) {
                         return true;
@@ -457,8 +457,8 @@ namespace container {
             * 
             * @note Does not check tail edgecase, rather traverses from the head of the list.
             */
-            Node<t> * Find(const t& value) {
-                Node<t> * current = start;
+            DNode<t> * Find(const t& value) {
+                DNode<t> * current = start;
                 while (current != nullptr) {
                     if (current->Get() == value) {
                         return current;
@@ -487,7 +487,7 @@ namespace container {
                     logging::error("Error: Index '", index, "' is out of bounds.");
                     return t();
                 }
-                Node<t> * current = start;
+                DNode<t> * current = start;
                 for (size_t i = 0; i < index; ++i) {
                     current = current->next;
                 }
@@ -505,9 +505,9 @@ namespace container {
                 if (start == nullptr && end == nullptr) {
                     return;
                 }
-                Node<t> * current = start;
+                DNode<t> * current = start;
                 while (current != nullptr) {
-                    Node<t> * next = current->next;
+                    DNode<t> * next = current->next;
                     delete current;
                     current = next;
                 }
@@ -523,23 +523,23 @@ namespace container {
             * @param none
             * @return 
             */
-            ~List() {
-                Node<t> * current = start;
+            ~DoublyLinkedList() {
+                DNode<t> * current = start;
                 if (current == nullptr) {
                     return;
                 }
                 while (current != nullptr) {
-                    Node<t> * next = current->next;
+                    DNode<t> * next = current->next;
                     delete current;
                     current = next;
                 }
-            } // ~List()
+            } // ~DoublyLinkedList()
     
     
-    }; // template<typename t> class List
+    }; // template<typename t> class DoublyLinkedList
 
 
 } // namespace container
 
 
-#endif // #ifndef LINKEDLISTS_H
+#endif // #ifndef DLINKEDLIST_H
