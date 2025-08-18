@@ -1,5 +1,28 @@
-// Node struct
-// SLinkedList
+// SNode struct
+//  - t value
+//  - SNode<t> * next
+//  - Constr
+// SLinkedList struct
+// - private
+// - Node<t> * head = nullptr
+// - size_t size = 0
+// - public
+// - constr, destruct
+// - InsertFirst
+// - InsertLast
+// - InsertAt
+// - InsertMany
+// - DeleteFirst
+// - DeleteLast
+// - DeleteAt
+// - DeleteValue
+// - Clear
+// - Contains
+// - PrintAll
+// - IsEmpty
+// - GetSize
+// - Find
+// - GetAt
 
 /* ---------------- Linker Map ---------------- */
 #ifndef SLINKEDLIST_H

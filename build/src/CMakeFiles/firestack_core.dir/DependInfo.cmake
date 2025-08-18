@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Developer/Projects/FireStack/src/container/linkedlists.cpp" "src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.obj.d"
+  "C:/Developer/Projects/FireStack/src/container/DLinkedList.cpp" "src/CMakeFiles/firestack_core.dir/container/DLinkedList.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/container/DLinkedList.cpp.obj.d"
+  "C:/Developer/Projects/FireStack/src/container/SLinkedList.cpp" "src/CMakeFiles/firestack_core.dir/container/SLinkedList.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/container/SLinkedList.cpp.obj.d"
   "C:/Developer/Projects/FireStack/src/core/logging.cpp" "src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/logging.cpp.obj.d"
   "C:/Developer/Projects/FireStack/src/core/math.cpp" "src/CMakeFiles/firestack_core.dir/core/math.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/core/math.cpp.obj.d"
   "C:/Developer/Projects/FireStack/src/ui/button.cpp" "src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj" "gcc" "src/CMakeFiles/firestack_core.dir/ui/button.cpp.obj.d"

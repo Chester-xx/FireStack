@@ -136,29 +136,53 @@ firestack_core/fast:
 	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/build
 .PHONY : firestack_core/fast
 
-container/linkedlists.obj: container/linkedlists.cpp.obj
-.PHONY : container/linkedlists.obj
+container/DLinkedList.obj: container/DLinkedList.cpp.obj
+.PHONY : container/DLinkedList.obj
 
 # target to build an object file
-container/linkedlists.cpp.obj:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.obj
-.PHONY : container/linkedlists.cpp.obj
+container/DLinkedList.cpp.obj:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/DLinkedList.cpp.obj
+.PHONY : container/DLinkedList.cpp.obj
 
-container/linkedlists.i: container/linkedlists.cpp.i
-.PHONY : container/linkedlists.i
+container/DLinkedList.i: container/DLinkedList.cpp.i
+.PHONY : container/DLinkedList.i
 
 # target to preprocess a source file
-container/linkedlists.cpp.i:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.i
-.PHONY : container/linkedlists.cpp.i
+container/DLinkedList.cpp.i:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/DLinkedList.cpp.i
+.PHONY : container/DLinkedList.cpp.i
 
-container/linkedlists.s: container/linkedlists.cpp.s
-.PHONY : container/linkedlists.s
+container/DLinkedList.s: container/DLinkedList.cpp.s
+.PHONY : container/DLinkedList.s
 
 # target to generate assembly for a file
-container/linkedlists.cpp.s:
-	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/linkedlists.cpp.s
-.PHONY : container/linkedlists.cpp.s
+container/DLinkedList.cpp.s:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/DLinkedList.cpp.s
+.PHONY : container/DLinkedList.cpp.s
+
+container/SLinkedList.obj: container/SLinkedList.cpp.obj
+.PHONY : container/SLinkedList.obj
+
+# target to build an object file
+container/SLinkedList.cpp.obj:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/SLinkedList.cpp.obj
+.PHONY : container/SLinkedList.cpp.obj
+
+container/SLinkedList.i: container/SLinkedList.cpp.i
+.PHONY : container/SLinkedList.i
+
+# target to preprocess a source file
+container/SLinkedList.cpp.i:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/SLinkedList.cpp.i
+.PHONY : container/SLinkedList.cpp.i
+
+container/SLinkedList.s: container/SLinkedList.cpp.s
+.PHONY : container/SLinkedList.s
+
+# target to generate assembly for a file
+container/SLinkedList.cpp.s:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/container/SLinkedList.cpp.s
+.PHONY : container/SLinkedList.cpp.s
 
 core/logging.obj: core/logging.cpp.obj
 .PHONY : core/logging.obj
@@ -362,9 +386,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... firestack_core
-	@echo ... container/linkedlists.obj
-	@echo ... container/linkedlists.i
-	@echo ... container/linkedlists.s
+	@echo ... container/DLinkedList.obj
+	@echo ... container/DLinkedList.i
+	@echo ... container/DLinkedList.s
+	@echo ... container/SLinkedList.obj
+	@echo ... container/SLinkedList.i
+	@echo ... container/SLinkedList.s
 	@echo ... core/logging.obj
 	@echo ... core/logging.i
 	@echo ... core/logging.s
