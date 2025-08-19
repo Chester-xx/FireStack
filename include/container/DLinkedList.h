@@ -208,7 +208,7 @@ namespace container {
     
     
             /*
-            * @brief Inserts user defined length of items to list.
+            * @brief Inserts user defined length of items to the list.
             *
             * @note `static assertion` on all variadic types to ensure they match with the lists template type.
             *

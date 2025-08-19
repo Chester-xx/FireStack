@@ -3,7 +3,6 @@
 // SLinkedList struct
 // - public
 
-//      - InsertMany
 //      - DeleteFirst
 //      - DeleteLast
 //      - DeleteAt
@@ -186,6 +185,23 @@ namespace container {
                 }
                 size++;
             } // InsertAt(const size_t& index, const t& value)
+
+
+            /*
+            * @brief Inserts user defined length of items to the list.
+            *
+            * @note `static assertion` on all variadic types to ensure they match with the lists template type.
+            *
+            * @param args Variadic template, allows the user to enter as many arguments as they want into the function parameter.
+            * @return void
+            */
+            template<typename... arguments>
+            void InsertMany(const arguments&... args) {
+                static_assert((std::is_same_v<t, arguments> && ...), "Source file function 'container::SinglyLinkedList::InsertMany()' only supports one template type, ensure all function parameter types match the list's template type.");
+                (InsertLast(args), ...);
+            } // template<typename... arguments> void InsertMany(const arguments&... args)
+
+
 
 
     };
