@@ -5,7 +5,7 @@
       "name": "Run App Executable",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/${relativeFileDirname}/app1.exe",
+      "program": "${workspaceFolder}/build/${relativeFileDirname}/3D_Blend.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",

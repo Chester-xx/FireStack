@@ -1,4 +1,4 @@
-# Install script for directory: C:/Developer/Projects/FireStack/apps
+# Install script for directory: C:/Developer/Projects/FireStack/apps/3D_Blend
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,19 +37,9 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "C:/Developer/Tools/mingw64/bin/objdump.exe")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Developer/Projects/FireStack/build/apps/app1/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Developer/Projects/FireStack/build/apps/3D_Blend/cmake_install.cmake")
-endif()
-
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Developer/Projects/FireStack/build/apps/install_local_manifest.txt"
+  file(WRITE "C:/Developer/Projects/FireStack/build/apps/3D_Blend/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

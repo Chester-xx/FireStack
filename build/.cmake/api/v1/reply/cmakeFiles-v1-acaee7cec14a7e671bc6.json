@@ -213,6 +213,9 @@
 		},
 		{
 			"path" : "apps/app1/CMakeLists.txt"
+		},
+		{
+			"path" : "apps/3D_Blend/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

@@ -1,0 +1,2 @@
+add_executable(3D_Blend main.cpp)
+target_link_libraries(3D_Blend firestack_core)

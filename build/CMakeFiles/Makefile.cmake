@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "C:/Developer/Projects/FireStack/CMakeLists.txt"
+  "C:/Developer/Projects/FireStack/apps/3D_Blend/CMakeLists.txt"
   "C:/Developer/Projects/FireStack/apps/CMakeLists.txt"
   "C:/Developer/Projects/FireStack/apps/app1/CMakeLists.txt"
   "CMakeFiles/3.31.5/CMakeCCompiler.cmake"
@@ -60,10 +61,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "apps/CMakeFiles/CMakeDirectoryInformation.cmake"
   "apps/app1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "apps/3D_Blend/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/firestack_core.dir/DependInfo.cmake"
   "apps/app1/CMakeFiles/app1.dir/DependInfo.cmake"
+  "apps/3D_Blend/CMakeFiles/3D_Blend.dir/DependInfo.cmake"
   )

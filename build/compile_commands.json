@@ -64,5 +64,11 @@
   "command": "C:\\Developer\\Tools\\mingw64\\bin\\g++.exe  @CMakeFiles/app1.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\app1.dir\\main.cpp.obj -c C:\\Developer\\Projects\\FireStack\\apps\\app1\\main.cpp",
   "file": "C:/Developer/Projects/FireStack/apps/app1/main.cpp",
   "output": "apps/app1/CMakeFiles/app1.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Developer/Projects/FireStack/build/apps/3D_Blend",
+  "command": "C:\\Developer\\Tools\\mingw64\\bin\\g++.exe  @CMakeFiles/3D_Blend.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\3D_Blend.dir\\main.cpp.obj -c C:\\Developer\\Projects\\FireStack\\apps\\3D_Blend\\main.cpp",
+  "file": "C:/Developer/Projects/FireStack/apps/3D_Blend/main.cpp",
+  "output": "apps/3D_Blend/CMakeFiles/3D_Blend.dir/main.cpp.obj"
 }
 ]

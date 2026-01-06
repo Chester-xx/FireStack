@@ -31,14 +31,15 @@
 					"source" : "src",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
 					"build" : "apps",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-apps-Debug-12c899f314185723a34a.json",
 					"minimumCMakeVersion" : 
@@ -61,6 +62,21 @@
 					"source" : "apps/app1",
 					"targetIndexes" : 
 					[
+						1
+					]
+				},
+				{
+					"build" : "apps/3D_Blend",
+					"jsonFile" : "directory-apps.3D_Blend-Debug-35f1b9158b251dabfc72.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.31"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "apps/3D_Blend",
+					"targetIndexes" : 
+					[
 						0
 					]
 				}
@@ -74,18 +90,27 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "FireStack",
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 4,
+					"id" : "3D_Blend::@05af86d464ac201636f5",
+					"jsonFile" : "target-3D_Blend-Debug-09b84e4aff323e6ff1c9.json",
+					"name" : "3D_Blend",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 3,
 					"id" : "app1::@8bd8a3a752e2e9690ee1",

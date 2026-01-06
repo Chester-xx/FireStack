@@ -86,21 +86,21 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles C:\Developer\Projects\FireStack\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles C:\Developer\Projects\FireStack\build\apps\3D_Blend\\CMakeFiles\progress.marks
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/3D_Blend/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles C:\Developer\Projects\FireStack\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 codegen
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles C:\Developer\Projects\FireStack\build\apps\3D_Blend\\CMakeFiles\progress.marks
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/3D_Blend/codegen
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Developer\Projects\FireStack\build\CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/3D_Blend/clean
 .PHONY : clean
 
 # The main clean target
@@ -109,57 +109,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/3D_Blend/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/3D_Blend/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named firestack_core
+# Convenience name for target.
+apps/3D_Blend/CMakeFiles/3D_Blend.dir/rule:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 apps/3D_Blend/CMakeFiles/3D_Blend.dir/rule
+.PHONY : apps/3D_Blend/CMakeFiles/3D_Blend.dir/rule
 
-# Build rule for target.
-firestack_core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 firestack_core
-.PHONY : firestack_core
-
-# fast build rule for target.
-firestack_core/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\firestack_core.dir\build.make src/CMakeFiles/firestack_core.dir/build
-.PHONY : firestack_core/fast
-
-#=============================================================================
-# Target rules for targets named app1
-
-# Build rule for target.
-app1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app1
-.PHONY : app1
-
-# fast build rule for target.
-app1/fast:
-	$(MAKE) $(MAKESILENT) -f apps\app1\CMakeFiles\app1.dir\build.make apps/app1/CMakeFiles/app1.dir/build
-.PHONY : app1/fast
-
-#=============================================================================
-# Target rules for targets named 3D_Blend
-
-# Build rule for target.
-3D_Blend: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 3D_Blend
+# Convenience name for target.
+3D_Blend: apps/3D_Blend/CMakeFiles/3D_Blend.dir/rule
 .PHONY : 3D_Blend
 
 # fast build rule for target.
 3D_Blend/fast:
-	$(MAKE) $(MAKESILENT) -f apps\3D_Blend\CMakeFiles\3D_Blend.dir\build.make apps/3D_Blend/CMakeFiles/3D_Blend.dir/build
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f apps\3D_Blend\CMakeFiles\3D_Blend.dir\build.make apps/3D_Blend/CMakeFiles/3D_Blend.dir/build
 .PHONY : 3D_Blend/fast
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f apps\3D_Blend\CMakeFiles\3D_Blend.dir\build.make apps/3D_Blend/CMakeFiles/3D_Blend.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f apps\3D_Blend\CMakeFiles\3D_Blend.dir\build.make apps/3D_Blend/CMakeFiles/3D_Blend.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /d C:\Developer\Projects\FireStack\build && $(MAKE) $(MAKESILENT) -f apps\3D_Blend\CMakeFiles\3D_Blend.dir\build.make apps/3D_Blend/CMakeFiles/3D_Blend.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -171,8 +170,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 3D_Blend
-	@echo ... app1
-	@echo ... firestack_core
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 
@@ -184,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Developer\Projects\FireStack\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
