@@ -29,6 +29,7 @@
 - Thought it would be a cool idea to make a c++ app that can display a 3d view of an exported .blend file in glTF format
 - Either Qt 3D or Qt + OpenGL
 - Main Focal Areas:
+    - Qt Signals & Slots + QML
     - OpenGL + glTF pipeline
     - [VBOs & VAOs](https://medium.com/@deyan.sirakov2006/the-definitive-guide-to-opengl-vbos-vaos-and-ebos-6193ab13ccc5)
     - [Camera Matrices](https://en.wikipedia.org/wiki/Camera_matrix)
