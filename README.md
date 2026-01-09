@@ -1,23 +1,19 @@
 # FireStack
 - Personal Cpp Codebase Project
 
-# Build Commands
-- mingw32-make within .\build
+# Build Outline
+- Open **FireStack** folder in Visual Studio 2022
+- Active C++ toolchain is **MSVC x64** (Migrated from mingw32)
+- **Qt 6.10.1 msvc_x64** Required and linked with CMake for BlendViewer
+- Build Output to `out/build/x64-(Debug/Release)`
 
-# Removing source files
+# Removing Build Files
 - Powershell:
 - cd C:\Developer\Projects\FireStack
-- Remove-Item -Recurse -Force .\build
-- cmake -G "MinGW Makefiles" -S . -B build
-- Terminal:
-- cd .\build
-- mingw32-make
+- Remove-Item -Recurse -Force .\out\build
 
-# Removing current build
-- Powershell:
-- cd C:\Developer\Projects\FireStack
-- Remove-Item -Recurse -Force .\build
-- cmake -G "MinGW Makefiles" -S . -B build
+# Git Ignore
+- `.vs/` & `out/` have been removed from tracking
 
 # Documentation
 ### Doxygen Formatting
