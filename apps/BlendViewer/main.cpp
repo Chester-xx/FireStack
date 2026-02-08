@@ -1,11 +1,12 @@
 #include "../include/core/logging.h"
 #include <QCoreApplication>
+#include <QDebug>
 
 int main(int argc, char* argv[])
 {
 	QCoreApplication app(argc, argv);
 
-	logging::print("Application Output Test");
+	qInfo() << "BlendViewer application started.";
 
 	return app.exec();
 }

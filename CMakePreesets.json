@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "x64-debug",
+      "displayName": "x64 Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/x64-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_PREFIX_PATH": "C:/Developer/Tools/Qt/6.10.1/msvc2022_64"
+      }
+    }
+  ]
+}
